@@ -1,3 +1,56 @@
+
+$input_border_radius: 0px;
+$input_height: 50px;
+$dropdown_padding: 18px !default;
+
+$gray_dark: #444 !default;
+$gray: $border-color;
+$gray_light: $border-color;
+$gray_lighter: #f6f6f6 !default;
+$primary_light: $gray !default;
+$arrow_color: $gray !default;
+
+@import 'jquery-nice-select/scss/nice-select.scss';
+
+.nice-select {
+  float: none;
+  background: $bg;
+
+  &::after {
+    background-image: url("data:image/svg+xml,%3Csvg width='8' height='14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M1.333 13.541a1.32 1.32 0 01-.943-.396 1.366 1.366 0 010-1.912L4.78 6.77.39 2.31a1.366 1.366 0 010-1.912 1.318 1.318 0 011.885 0l5.335 5.42a1.366 1.366 0 010 1.912l-5.335 5.42a1.32 1.32 0 01-.942.392z' fill='%23D8BF95'/%3E%3C/svg%3E");
+    width: 8px;
+    height: 14px;
+    background-size: contain;
+    border: none;
+    transform: none;
+    margin-top: -7px;
+    right: 22px;
+  }
+  &.open:after {
+    transform: none;
+  }
+  .list {
+    background: $bg;
+    margin-top: 0;
+    border: 1px solid $border-color;
+    border-top: none;
+
+    left: -1px;
+    right: -1px;
+  }
+
+  .option {
+    color: #fff;
+  }
+
+  .option:hover,
+  .option.focus, 
+  .option.selected.focus {
+    color: $font-color;
+    background: none;
+  }
+}
+
 textarea {
   resize: vertical;
 }
@@ -13,7 +66,7 @@ input,
 select,
 button,
 textarea {
-    background: none;
+    background: $bg;
     font: inherit;
     color: inherit;
 }
@@ -23,34 +76,41 @@ label {
     user-select: none;
 }
 
+
 .form-control{
-  display: block;
-  border: none;
-  width: 100%;
-  max-width: 100%;
-  background-color: #fff;
-  outline: none;
-  font-size: 15px;
-  color: $font-color;
-  line-height: 1.4;
-  padding: (41-(1.4*15))/2+px 16px;
-  // padding: 0 12px;
-  margin-bottom: 10px;
+  padding-bottom: 25px;
+
+  &__label {
+    font-family: $font-family3;
+    margin-bottom: 25px;
+    @extend .text-ellipsis;
+  }
 
   @include placeholder{
-    color: inherit;
+    color: $font-color;
   };
-  @include placeholder--focus;
-
-  &--bordered{
-    border: 1px soled #fefefe;
-  }
 }
 
-.form-row{
+.form-row{ 
 
   span{
     display: block;
   }
 }
 
+input,
+textarea {
+  display: block;
+  border: 1px solid $border-color;
+  width: 100%;
+  max-width: 100%;
+  background: none;
+  outline: none;
+  font-size: 14px;
+  color: #fff;
+  line-height: 1.4;
+  padding: 14px 25px;
+}
+textarea {
+  padding: 25px;
+}

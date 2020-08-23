@@ -191,7 +191,7 @@
 
 @mixin hoverBtn($color) {
   &:hover {
-    color: #fff;
+    color: #111;
     background-color: $color;
     border-color: $color;
   }

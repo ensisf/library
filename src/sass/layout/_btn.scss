@@ -5,104 +5,109 @@
   user-select: none;
   touch-action: manipulation;
   text-align: center;
-  text-transform: uppercase;
   background-image: none;
   white-space: nowrap;
   cursor: pointer;
   background: none;
   text-align: center;
-  border: none;
-  line-height: 1;
+  border: $border;
+  font-size: 14px;
+  line-height: 17px;
+  font-family: $font-family;
+  padding: 16px 22px 15px;
+  transition: 0.2s;
 
   @include focusBtn(#000);
+  @include hoverBtn(#fff);
+
   &:focus {
     outline: none;
   }
+
   &--primary {
     background-color: $primary;
     color: #fff;
     border-color: $primary;
-    @include focusBtn($primary);
-    @include hoverBtn($primary-hover);
+    @include hoverBtn(#fff);
   }
-  &--secondary {
-    background-color: $secondary;
-    color: #fff;
-    border-color: $secondary;
-    @include focusBtn($secondary);
-    @include hoverBtn($secondary-hover);
-  }
-  &--success {
-    background-color: $success;
-    color: #fff;
-    border-color: $success;
-    @include focusBtn($success);
-    @include hoverBtn($success-hover);
-  }
-  &--warning {
-    background-color: $warning;
-    color: #fff;
-    border-color: $warning;
-    @include focusBtn($warning);
-    @include hoverBtn($warning-hover);
-  }
-  &--error {
-    background-color: $error;
-    color: #fff;
-    border-color: $error;
-    @include focusBtn($error);
-    @include hoverBtn($error-hover);
-  } //////////////////////////////////////////////////       OUTLINE
-  &--outline {
-    color: #949697;
-    border-color: currentColor;
-    @include focusBtn(#949697);
-    &:hover {
-      color: $primary;
-    }
-  }
-  &--outline-primary {
-    color: $primary;
-    border-color: $primary;
-    @include focusBtn($primary);
-    @include hoverBtn($primary-hover);
-  }
-  &--outline-secondary {
-    color: $secondary;
-    border-color: $secondary;
-    @include focusBtn($secondary);
-    @include hoverBtn($secondary-hover);
-  }
-  &--outline-success {
-    background-color: #fdfdfe;
-    color: $success;
-    border-color: $success;
-    @include focusBtn($success);
-  }
-  &--outline-warning {
-    background-color: #fdfdfe;
-    color: $warning;
-    border-color: $warning;
-    @include focusBtn($warning);
-  }
-  &--outline-error {
-    background-color: #fdfdfe;
-    color: $error;
-    border-color: $error;
-    @include focusBtn($error);
-  } 
-  &--round{
-    border-radius: 56px;
-  }
-  //////////////////////////////////////////////////       SIZE
-  &--lg {
-    padding: 16px 25px;
-    text-transform: uppercase;
-  }
-  &--sm {
-    padding: 7px 30px;
-    border-radius: rem(4);
-  }
+  // &--secondary {
+  //   background-color: $secondary;
+  //   color: #fff;
+  //   border-color: $secondary;
+  //   @include focusBtn($secondary);
+  //   @include hoverBtn($secondary-hover);
+  // }
+  // &--success {
+  //   background-color: $success;
+  //   color: #fff;
+  //   border-color: $success;
+  //   @include focusBtn($success);
+  //   @include hoverBtn($success-hover);
+  // }
+  // &--warning {
+  //   background-color: $warning;
+  //   color: #fff;
+  //   border-color: $warning;
+  //   @include focusBtn($warning);
+  //   @include hoverBtn($warning-hover);
+  // }
+  // &--error {
+  //   background-color: $error;
+  //   color: #fff;
+  //   border-color: $error;
+  //   @include focusBtn($error);
+  //   @include hoverBtn($error-hover);
+  // } //////////////////////////////////////////////////       OUTLINE
+  // &--outline {
+  //   color: #949697;
+  //   border-color: currentColor;
+  //   @include focusBtn(#949697);
+  //   &:hover {
+  //     color: $primary;
+  //   }
+  // }
+  // &--outline-primary {
+  //   color: $primary;
+  //   border-color: $primary;
+  //   @include focusBtn($primary);
+  //   @include hoverBtn($primary-hover);
+  // }
+  // &--outline-secondary {
+  //   color: $secondary;
+  //   border-color: $secondary;
+  //   @include focusBtn($secondary);
+  //   @include hoverBtn($secondary-hover);
+  // }
+  // &--outline-success {
+  //   background-color: #fdfdfe;
+  //   color: $success;
+  //   border-color: $success;
+  //   @include focusBtn($success);
+  // }
+  // &--outline-warning {
+  //   background-color: #fdfdfe;
+  //   color: $warning;
+  //   border-color: $warning;
+  //   @include focusBtn($warning);
+  // }
+  // &--outline-error {
+  //   background-color: #fdfdfe;
+  //   color: $error;
+  //   border-color: $error;
+  //   @include focusBtn($error);
+  // } 
+  // &--round{
+  //   border-radius: 56px;
+  // }
+  // //////////////////////////////////////////////////       SIZE
+  // &--lg {
+  //   padding: 16px 25px;
+  //   text-transform: uppercase;
+  // }
+  // &--sm {
+  //   padding: 7px 30px;
+  //   border-radius: rem(4);
+  // }
   &--full {
     width: 100%;
     padding-left: 5px;

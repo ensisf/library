@@ -1,0 +1,25 @@
+.ttl {
+  font-family: $font-family3;
+  font-weight: bold;
+  color: $primary;
+  margin: 0;
+
+  &--dark {
+    color: $secondary;
+  }
+  
+  &--1 {
+    font-size: 72px;
+    line-height: 80/72;
+  }
+  
+  &--2 {
+    font-size: 48px;
+    line-height: 50/48 ;
+  }
+  
+  &--3 {
+    font-size: 24px;
+    line-height: 30/24;
+  }
+ }

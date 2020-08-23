@@ -1,8 +1,7 @@
 // markup for plugin Breadcrumb NavXT
 // https://wordpress.org/plugins/breadcrumb-navxt/
 .breadcrumbs {
-  background-color: #fff;
-  padding: 15px 0 25px;
+  padding: 15px 0;
 
   .container {
     display: block;
@@ -10,12 +9,13 @@
 }
 
 .breadcrumbs__list{
-
+  font-family: $font-family3;
   span,
   a {
     font-size: 1rem;
     display: inline-block;
     vertical-align: top;
+    
   }
 
   > span {
@@ -23,9 +23,9 @@
   }
 
   a { /////////////////////////   All links
-  
+    text-decoration: none;
     &:hover {
-      
+      text-decoration: underline;
     }
   }
 

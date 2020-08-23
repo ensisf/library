@@ -22,5 +22,10 @@ body {
   @include font_smoothing;
 }
 
-
+a {
+  color: $font-color;
+  &:hover {
+    text-decoration: none; 
+  } 
+}
 ///////////////////////////Wordpress
