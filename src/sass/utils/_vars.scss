@@ -1,0 +1,36 @@
+//==========COLORS==========//
+$primary: #2193d5;
+$primary-hover: darken(#1d79af, 5%);
+$secondary: #ff6e00;
+$secondary-hover: darken(#ff6e00, 5%);
+$success: #12bc70;
+$success-hover: darken(#12bc70, 5%);
+$warning: #ff7200;
+$warning-hover: darken(#ff7200, 5%);
+$error: #f41019;
+$error-hover: darken(#f41019, 5%);
+$font-color: #D8BF95;
+$border-color: #D8BF95;
+
+//==========FONT==========//
+$font: 'Montserrat';
+$sans: $font, sans-serif;
+$root-font-size: 14;
+$root-line-height: 26/$root-font-size;
+$font-family: #{$sans}, Calibri, sans-serif;
+$font-family2: Spectral, serif;
+$font-family3: 'Tenor Sans', serif;
+
+//shadows
+$shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.1);
+
+//borders
+$border: 1px solid $border-color;
+$border-bold: 2px solid $border-color;
+
+$breakpoints: ( 
+  xs: 576, 
+  sm: 768, 
+  md: 992, 
+  lg: 1200
+  );

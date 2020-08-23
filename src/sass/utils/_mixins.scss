@@ -1,0 +1,198 @@
+////////////////////////////////////////////////////////////////PX TO REM/EM
+@function rem($pxsize) {
+  @return ($pxsize/$root-font-size)+rem;
+}
+
+@function em($pxsize, $parent-size: $root-font-size) {
+  @return ($pxsize/$parent-size)+em;
+}
+
+///////////////////////////////////////////////////////////////SELECTION
+@mixin selection {
+  &::selection {
+    @content;
+  }
+}
+
+//==========FONT SMOOTHING==========//
+@mixin font_smoothing($value: antialiased) {
+  @if $value==antialiased {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -moz-font-smoothing: $value;
+    -ms-font-smoothing: $value;
+    -o-font-smoothing: $value;
+  }
+  @else {
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
+    -moz-font-smoothing: $value;
+    -ms-font-smoothing: $value;
+    -o-font-smoothing: $value;
+  }
+}
+
+//==========SCROLLBAR==========//
+@mixin scrollbar {
+  &::-webkit-scrollbar {
+    @content;
+  }
+}
+
+@mixin scrollbar-track {
+  &::-webkit-scrollbar-track {
+    @content;
+  }
+}
+
+@mixin scrollbar-thumb {
+  &::-webkit-scrollbar-thumb {
+    @content;
+  }
+}
+
+@mixin scrollbar-track-piece {
+  &::-webkit-scrollbar-track-piece {
+    @content;
+  }
+}
+
+///////////////////////////////////////////////////////Sizes mixin
+@mixin size($width, $height: $width) {
+  height: $height;
+  width: $width;
+}
+
+///////////////////////////////////////////////////////////////////////////////////////placeholder
+@mixin placeholder {
+  $placeholders: ':-webkit-input' ':-moz' '-moz' '-ms-input';
+  &[placeholder] {
+    text-overflow: ellipsis; //if the word does not fit - three points in the end
+  }
+  @each $placeholder in $placeholders {
+    &:#{$placeholder}-placeholder {
+      text-overflow: ellipsis; //if the word does not fit - three points in the end
+      // font: inherit;
+      font-weight: 400;
+      opacity: 1;
+      transition: color 0.3s ease;
+      @content;
+    }
+  }
+}
+
+///////////////////////////////////////////////////////////////////////////////////////palceholder:focus
+@mixin placeholder--focus {
+  $placeholders: ':-webkit-input' ':-moz' '-moz' '-ms-input';
+  @each $placeholder in $placeholders {
+    &:focus:#{$placeholder}-placeholder {
+      color: transparent; //hideplaceholder if :focus state
+    }
+  }
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////MEDIA
+@mixin max($size) {
+  @if map-has-key($breakpoints, $size) {
+    @media (max-width: #{map-get($breakpoints, $size) - 1}px) {
+      @content;
+    }
+  }
+  @else {
+    @media (max-width: #{$size}px) {
+      @content;
+    }
+  }
+}
+
+@mixin min($size) {
+  @if map-has-key($breakpoints, $size) {
+    @media (min-width: #{map-get($breakpoints, $size)}px) {
+      @content;
+    }
+  }
+  @else {
+    @media (min-width: #{$size}px) {
+      @content;
+    }
+  }
+}
+
+@mixin between($from, $to) {
+  
+  @if map-has-key($breakpoints, $from) {
+    @media (min-width: #{map-get($breakpoints, $from)}px) and (max-width: #{map-get($breakpoints, $to)}px) {
+      @content;
+    }
+  }
+  @else {
+    @media (min-width: #{$from}px) and (max-width: #{$to}px) {
+      @content;
+    }
+  }  
+}
+
+@mixin retina {
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    @content;
+  }
+}
+
+/// Returns the opposite direction of each direction in a list
+/// @author Hugo Giraudel
+/// @param {List} $directions - List of initial directions
+/// @return {List} - List of opposite directions
+@function opposite-direction($directions) {
+  $opposite-directions: ();
+  $direction-map: ( 'top': 'bottom', 'right': 'left', 'bottom': 'top', 'left': 'right');
+  @each $direction in $directions {
+    $direction: to-lower-case($direction);
+    @if map-has-key($direction-map, $direction) {
+      $opposite-directions: append( $opposite-directions, unquote(map-get($direction-map, $direction)));
+    }
+    @else {
+      @warn 'No opposite direction can be found for `#{$direction}`. Direction omitted.';
+    }
+  }
+  @return $opposite-directions;
+}
+
+/// Triangle helper mixin
+/// @param {Direction} $direction - Triangle direction, either `top`, `right`, `bottom` or `left`
+/// @param {Color} $color - Triangle color
+/// @param {width} $width - Triangle width
+/// @param {Height} $height - Triangle height
+@mixin triangle( $direction, $width: 1em, $height: $width, $color: currentColor) {
+  @if not index(top right bottom left, $direction) {
+    @error 'Direction must be either `top`, `right`, `bottom` or `left`.';
+  }
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  z-index: 200;
+  border-#{opposite-direction($direction)}: $height solid $color;
+  $transparent-borders: $width/2 solid transparent;
+  @if $direction==top or $direction==bottom {
+    border-left: $transparent-borders;
+    border-right: $transparent-borders;
+  }
+  @else if $direction==right or $direction==left {
+    border-bottom: $transparent-borders;
+    border-top: $transparent-borders;
+  }
+}
+
+@mixin focusBtn($color) {
+  &:focus {
+    box-shadow: 0 0 0 0.2rem rgba($color, 0.5);
+  }
+}
+
+@mixin hoverBtn($color) {
+  &:hover {
+    color: #fff;
+    background-color: $color;
+    border-color: $color;
+  }
+}

@@ -1,0 +1,56 @@
+textarea {
+  resize: vertical;
+}
+
+[disabled] {
+  cursor: not-allowed;
+  opacity: 0.8;
+  user-select: none;
+}
+
+
+input,
+select,
+button,
+textarea {
+    background: none;
+    font: inherit;
+    color: inherit;
+}
+
+label {
+    cursor: pointer;
+    user-select: none;
+}
+
+.form-control{
+  display: block;
+  border: none;
+  width: 100%;
+  max-width: 100%;
+  background-color: #fff;
+  outline: none;
+  font-size: 15px;
+  color: $font-color;
+  line-height: 1.4;
+  padding: (41-(1.4*15))/2+px 16px;
+  // padding: 0 12px;
+  margin-bottom: 10px;
+
+  @include placeholder{
+    color: inherit;
+  };
+  @include placeholder--focus;
+
+  &--bordered{
+    border: 1px soled #fefefe;
+  }
+}
+
+.form-row{
+
+  span{
+    display: block;
+  }
+}
+

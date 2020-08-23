@@ -1,0 +1,26 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  font-size: $root-font-size + px;
+  line-height: $root-line-height;
+  color: $font-color;
+  font-family: $font-family;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  display: grid; 
+  grid-template-rows: auto 1fr auto;  
+  min-width: 320px;
+  background-color: #111111;
+  @include font_smoothing;
+}
+
+
+///////////////////////////Wordpress
