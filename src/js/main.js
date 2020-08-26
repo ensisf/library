@@ -1,4 +1,5 @@
 import 'jquery-nice-select'
+import 'labelauty'
 
 import pageWidget from './utils/pages-widget';
 import './devs/popups';
@@ -17,6 +18,8 @@ pageWidget([
 jQuery(document).ready($ => {
 
     $('select').niceSelect();
+
+    $(":checkbox").labelauty({ label: false });
 
     $('.js-toggle-nav').on('click', function(e) {
       e.preventDefault();

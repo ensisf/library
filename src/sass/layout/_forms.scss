@@ -11,6 +11,7 @@ $primary_light: $gray !default;
 $arrow_color: $gray !default;
 
 @import 'jquery-nice-select/scss/nice-select.scss';
+@import 'labelauty/source/jquery-labelauty.scss';
 
 .nice-select {
   float: none;
@@ -78,7 +79,7 @@ label {
 
 
 .form-control{
-  padding-bottom: 25px;
+  padding-bottom: 40px;
 
   &__label {
     font-family: $font-family3;
@@ -113,4 +114,32 @@ textarea {
 }
 textarea {
   padding: 25px;
+}
+
+.labelauty-unchecked-image {
+  background: $bg;
+  background-image: none !important;
+}
+
+.labelauty-checked-image {
+  margin: auto;
+  background-image: url(../img/input-checked.png) !important;
+  width: 10px!important;
+  height: 10px!important;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+input.labelauty + label {
+  width:28px;
+  height:28px;
+  padding: 0;
+  display: flex;
+}
+input.labelauty + label,
+input.labelauty:checked:not([disabled]) + label:hover,
+input.labelauty:not(:checked):not([disabled]) + label:hover {
+  border: $border;
+  background: $bg;
+  border-radius: 0;
 }

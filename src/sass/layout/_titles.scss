@@ -9,17 +9,37 @@
   }
   
   &--1 {
-    font-size: 72px;
+    font-size: 40px;
     line-height: 80/72;
+
+    @include min('sm') {
+      font-size: 50px;
+    }
+
+    @include min('md') {
+      font-size: 72px;
+    }
   }
   
   &--2 {
-    font-size: 48px;
+    font-size: 35px;
     line-height: 50/48 ;
+
+    @include min('sm') {
+      font-size: 40px;
+    }
+
+    @include min('md') {
+      font-size: 48px;
+    }
   }
   
   &--3 {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 30/24;
+
+    @include min('sm') {
+      font-size: 24px;
+    }
   }
  }

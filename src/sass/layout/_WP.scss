@@ -29,7 +29,7 @@
 
 /////////////////////////////////////////cf7
 .wpcf7-not-valid{// not valid field
-  background-color: $error;
+  border-color: $error;
 }
 .wpcf7-not-valid-tip{ // not valid tip
   display: block;

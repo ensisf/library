@@ -26,9 +26,10 @@
 
   &--primary {
     background-color: $primary;
-    color: #fff;
+    color: #000000;
     border-color: $primary;
     @include hoverBtn(#fff);
+    font-weight: 700;
   }
   // &--secondary {
   //   background-color: $secondary;

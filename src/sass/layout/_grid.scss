@@ -2,8 +2,8 @@ $gutter: 28;
 $container-width: 1008;
 .container {
   margin: 0 auto;
-  max-width: 100%;
-  width: $container-width + $gutter + px;
+  width: 100%;
+  max-width: $container-width + $gutter + px;
   padding-left: $gutter/2 + px;
   padding-right: $gutter/2 + px;
 }
@@ -23,9 +23,13 @@ $container-width: 1008;
   padding-right: $gutter/2 + px;
 }
 
-.col-12 {
-  width: 100%;
+
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    width: $i / 12 * 100%;
+  }
 }
+
 
 @each $key,
 $val in $breakpoints {
