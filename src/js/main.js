@@ -8,8 +8,13 @@ import { $globals } from './utils/utils';
 pageWidget([
   'index',
   'about',
-  'blog',
-  'single',
+  'for-authors',
+  'extended-search',
+  'competitions',
+  'play',
+  'person',
+  'author-catalog',
+  'play-catalog',
   'contacts',
   'blocks',
 ]);

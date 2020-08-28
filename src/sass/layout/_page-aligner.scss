@@ -1,0 +1,21 @@
+.page-aligner{
+  @include min('lg') {
+    padding-left: 15vw;
+  }
+  background-color: $primary;
+  background-image: url(../img/aligner-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: 15vw auto;
+  &__content {
+    background-color: $primary;
+    padding: 0 30px 30px;
+
+    @include min('lg') {
+      padding: 0 76px 100px 52px
+    }
+    
+    .tbl-wrp {
+      margin-bottom: 50px;
+    }
+  }
+} 
