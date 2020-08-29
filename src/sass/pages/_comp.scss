@@ -1,0 +1,25 @@
+.competitions {
+  &__rest {
+    padding: 102px 0 80px;
+    background: $primary;
+    color: rgba(#000000, 0.8);
+    background-image: url(../img/shape-1.svg);
+    background-repeat: no-repeat;
+    background-position: -368px 60px;
+
+    .ttl {
+      color: #000;
+    }
+  }
+
+  &__rest-item {
+    padding-bottom: 30px;
+    padding-top: 15px;
+    p {
+      padding-bottom: 15px;
+    }
+    &:not(:last-child) {
+      border-bottom: 1px solid rgba(#000000, 0.3);
+    }
+  }
+}

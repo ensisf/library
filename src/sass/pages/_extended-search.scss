@@ -1,0 +1,37 @@
+.extended-search {
+  &__container {
+    @include min('lg') {
+      margin-left: 0;
+      padding-left: 0;
+    }
+  }
+
+  .breadcrumbs   {
+    .breadcrumbs__list > span {
+      margin-top: 0;
+      margin-bottom: 15px;
+    }
+    .container {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  &__form {
+    .btn {
+      width: 100%;
+    }
+    @include min('lg') {
+    .row {
+        flex-wrap: nowrap;
+        
+        .spec {
+          min-width: 112px;
+        }
+        .spec-1 {
+          min-width: 196px;
+        }
+      } 
+    }
+  }
+}

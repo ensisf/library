@@ -63,6 +63,11 @@ textarea {
 }
 
 
+input {
+  @include placeholder {
+    color: $primary;
+  }
+}
 input,
 select,
 button,
@@ -142,4 +147,8 @@ input.labelauty:not(:checked):not([disabled]) + label:hover {
   border: $border;
   background: $bg;
   border-radius: 0;
+}
+
+label[for*="labelauty"] {
+  margin-right: 10px;
 }
