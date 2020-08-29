@@ -35,6 +35,26 @@ a {
   }
 }
 
+.show-more {
+  text-decoration: none;
+  display:flex;
+  align-items: center;
+  color: #000;
+  font-size: 18px;
+  font-family: $font-family3;
+  line-height: 30px;
+
+  path {
+    fill: currentColor;
+  }
+  span {
+    margin-right: 10px;
+    &:not(:hover) {
+      text-decoration: underline;
+    };
+  }
+}
+
 .wrap{
   position: relative;
 
