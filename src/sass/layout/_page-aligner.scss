@@ -7,6 +7,9 @@
   background-repeat: no-repeat;
   background-size: 15vw auto;
   background-position: 0 0;
+  &--bg-secondary {
+    background: $secondary;;
+  }
   &__content {
     background-color: $primary;
     padding: 0 30px 30px;

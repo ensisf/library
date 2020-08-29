@@ -1,0 +1,33 @@
+.person {
+  &__img {
+    @include max('md') {
+      padding-top: 30px;
+    }
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  &__aligner {
+    margin-bottom: 10%;
+  }
+
+  &__container {
+    @include min('lg') {
+      margin-left: 0;
+       padding-left: 0;
+    }
+  }
+  .breadcrumbs   {
+    padding-top: 0;
+    .breadcrumbs__list > span {
+      margin-top: 0;
+      margin-bottom: 15px;
+    }
+    .container {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}

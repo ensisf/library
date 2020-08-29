@@ -13,7 +13,7 @@
   letter-spacing: 0.1em;
   font-weight: 500;
 
-  th {
+  th, b {
     font-family: Spectral;
     font-weight: bold;
     font-size: 22px;
@@ -40,6 +40,12 @@
     color: inherit;
     &:hover {
       color: #fff;
+    }
+  }
+
+  &.no-top-brdr {
+    tr:first-child td {
+      border-top: none;
     }
   }
 }

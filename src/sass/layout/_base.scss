@@ -112,5 +112,28 @@ a {
     }
   }
 }
+
+.hasShape {
+  position: relative;
+
+  > * {
+    position: relative;
+    z-index: 1;
+  }
+
+  &::before {
+    content: '';
+    width: 400px;
+    height: 400px;
+    background-image: url(../img/shape.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: -80px;
+    right: -80px;
+    opacity: 0.2;
+    z-index: 0;
+  }
+}
 ///////////////////////////Wordpress
 

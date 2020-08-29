@@ -6,6 +6,10 @@ $container-width: 1008;
   max-width: $container-width + $gutter + px;
   padding-left: $gutter/2 + px;
   padding-right: $gutter/2 + px;
+
+  &--fluid {
+    max-width: 100%;
+  }
 }
 
 .row {
