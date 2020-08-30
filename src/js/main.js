@@ -53,5 +53,12 @@ jQuery(document).ready($ => {
         }
       ]
     })
+    $('.js-index-slider').slick({
+      slidesToShow: 1,
+      nextArrow: '.js-index-next',
+      infinite: true,
+      prevArrow: '.js-index-prev',
+      fade: true
+    })
 
 });

@@ -1,0 +1,36 @@
+.index-slider {
+
+}
+.index-slide {
+  padding-top: 60px;
+  padding-bottom: 70px;
+  .ttl {
+    font-family: $font-family2;
+  }
+  img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    
+    height: 436px;
+    @include min('sm') {
+      max-width: 567px;
+    }
+  }
+  .about__img {
+    max-width: 567px;
+  }
+  .about__img::before {
+    width: 540px;
+    top: -60px;
+    right: -135px;
+    height: 540px;
+  }
+  .page-top__desc--top{
+    font-size: 18px;
+    max-width: 360px;
+    &::before {
+      content:none;
+    }
+  }
+}
