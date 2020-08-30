@@ -1,5 +1,6 @@
 import 'jquery-nice-select'
 import 'labelauty'
+import 'slick-carousel'
 
 import pageWidget from './utils/pages-widget';
 import './devs/popups';
@@ -31,5 +32,26 @@ jQuery(document).ready($ => {
       $(this).toggleClass('opened');
       $globals.body.toggleClass('navIn');
     });
+
+    $('.js-about-slider').slick({
+      slidesToShow: 3,
+      nextArrow: '.js-about-next',
+      infinite: true,
+      prevArrow: '.js-about-prev',
+      responsive: [
+        {
+          breakpoint: 776,
+          settings: {
+            slidesToShow: 2
+          }
+        },
+        {
+          breakpoint: 576,
+          settings: {
+            slidesToShow: 1
+          }
+        }
+      ]
+    })
 
 });

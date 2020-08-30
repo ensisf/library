@@ -1,24 +1,97 @@
 //= template/header.html
-//= template/breadcrumbs.html
-<section class="about">
-  <div class="page-top container">
-    <div class="row align-items-center">
-      <div class="col col-12 col-md-6">
-        <h1 class="ttl ttl--2">Про нас </h1>
-        <br>
-        <br>
-        <div class="page-top__desc page-top__desc--top">
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan. Lorem Ipsum is simply dummy text of the printing and typesetting industry.  z</p>
+<section class="page about">
+  <div class="page-aligner page-aligner--bg-secondary person__aligner">
+    <div class="page-top container person__container about__top-container">
+      <div class="row">
+        <div class="col col-12 col-md-6 about__top-content">
+          //= template/breadcrumbs.html
+          <h1 class="ttl ttl--2">Про нас </h1>
+          <br>
+          <br>
+          <div class="page-top__desc page-top__desc--top">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan. Lorem Ipsum is simply dummy text of the printing and typesetting industry.  z</p>
+          </div>
         </div>
-      </div>
-      <div class="col col-12 col-md-6">
-        <img src="" alt="">
+        <div class="col col-12 col-md-6 about__top-img">
+          <div class="hasShape about__img">
+            <img src="img/about.png" alt="">
+          </div>
+        </div>
       </div>
     </div>
   </div>
-    <br><br>
-  <div class="container">
-
+  <div class="about__mission">
+    <div class="container">
+      <div class="ttl ttl--2">Наша місія</div>
+      <br>
+      <br>
+      <div class="row">
+        <div class="col col-12 col-sm-4">
+          <i>01</i>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan. </p>
+        </div>
+        <div class="col col-12 col-sm-4">
+          <i>02</i>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan. </p>
+        </div>
+        <div class="col col-12 col-sm-4">
+          <i>03</i>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan. </p>
+        </div>
+      </div>
+    </div>
   </div>
+  <div class="page-aligner about__slider-sec">
+    <div class="container about__slider">
+      <div class="about__slider-top align-items-center">
+        <div class="ttl ttl--2">Як користуватися<br>сайтом</div>
+        <div class="about__slider-nav d-flex align-items-center justify-center">
+          <button type="button" class="slider-btn js-about-next">
+            <svg width="30" height="16" viewBox="0 0 30 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.34371 8.82952C0.344063 8.82987 0.344357 8.83028 0.344767 8.83063L6.46805 14.9244C6.92678 15.3809 7.66875 15.3792 8.12537 14.9204C8.58193 14.4617 8.58018 13.7197 8.12144 13.2631L4.01027 9.17188H28.8281C29.4754 9.17188 30 8.64723 30 8C30 7.35278 29.4754 6.82813 28.8281 6.82813H4.01033L8.12139 2.73688C8.58012 2.28032 8.58187 1.53834 8.12531 1.07961C7.66869 0.620766 6.92666 0.619184 6.46799 1.07563L0.344707 7.16938C0.344355 7.16973 0.344063 7.17014 0.343651 7.17049C-0.115313 7.62858 -0.113848 8.37295 0.34371 8.82952Z" fill="#D8BF95"/>
+            </svg>
+          </button>
+          <button type="button" class="slider-btn js-about-prev">
+            <svg width="30" height="16" viewBox="0 0 30 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M29.6563 7.17048C29.6559 7.17013 29.6556 7.16972 29.6552 7.16937L23.532 1.07562C23.0732 0.619117 22.3312 0.620816 21.8746 1.07961C21.4181 1.53834 21.4198 2.28031 21.8786 2.73687L25.9897 6.82812H1.17188C0.524648 6.82812 0 7.35277 0 8C0 8.64722 0.524648 9.17187 1.17188 9.17187H25.9897L21.8786 13.2631C21.4199 13.7197 21.4181 14.4617 21.8747 14.9204C22.3313 15.3792 23.0733 15.3808 23.532 14.9244L29.6553 8.83062C29.6556 8.83027 29.6559 8.82986 29.6563 8.82951C30.1153 8.37142 30.1138 7.62705 29.6563 7.17048Z" fill="#D8BF95"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="about-slider">
+        <div class="js-about-slider">
+          <div class="col">
+            <div class="about-slide">
+              <img src="img/sl.png" alt="">
+              <div class="ttl ttl--3"><a class="reverse" href="">Як користуватися </a></div>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan.</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="about-slide">
+              <img src="img/sl.png" alt="">
+              <div class="ttl ttl--3"><a class="reverse" href="">Як користуватися </a></div>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan.</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="about-slide">
+              <img src="img/sl.png" alt="">
+              <div class="ttl ttl--3"><a class="reverse" href="">Як користуватися </a></div>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan.</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="about-slide">
+              <img src="img/sl.png" alt="">
+              <div class="ttl ttl--3"><a class="reverse" href="">Як користуватися </a></div>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
 </section>
 //= template/footer.html

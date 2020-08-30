@@ -1,0 +1,19 @@
+.slider-btn {
+  background: none;
+  border: none;
+  padding: 11px;
+  cursor: pointer;
+  opacity: 0.4;
+
+  svg {
+    display: block;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+}

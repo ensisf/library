@@ -1,3 +1,131 @@
 .about{
+  .breadcrumbs   {
+    padding-top: 0;
+    .breadcrumbs__list > span {
+      margin-top: 0;
+      margin-bottom: 15px;
+    }
+    .container {
+      margin: 0;
+      padding: 0;
+    }
+  }
+  &__top-container {
+    max-width: 100%;
 
+    .row {
+      @include min('md') {
+        flex-wrap: nowrap;
+      }
+    }
+  }
+  &__top-content {
+    padding-bottom: 80px;
+   @include min("md") {
+    max-width: 550px;
+    margin-right: 70px;
+   }
+  }
+  &__top-img {
+    max-width: 100%;
+    flex-grow: 1;
+  }
+  &__img {
+    max-width: 480px;
+
+    &::before {
+      width: 565px;
+      background-image: url(../img/shape-2.svg);
+      height: 565px;
+      opacity: 1;
+    }
+  }
+
+  &__mission {
+    background: $primary;
+    color: rgba(#000000, 0.8);
+    background-image: url(../img/shape-1.svg);
+    background-repeat: no-repeat;
+    background-position: calc(375px / -2) 50%;
+    background-size: 375px 375px;
+    padding: 110px 0 150px;
+    position: relative;
+    z-index: 10;
+    .ttl {
+      color: #000;
+    }
+
+    .col {
+      padding-bottom: 30px;
+
+      i {
+        display: block;
+        text-align: right;
+        font-size: 80px;
+        font-family: $font-family2;
+        opacity: 0.8;
+        line-height: 1;
+      }
+    }
+  }
+
+  &__slider-sec{
+    background: none;
+    padding-top:115px;
+    padding-bottom:50px;
+    overflow: hidden;
+  }
+  
+  &__slider-nav {
+    @include max('lg') {
+      margin-top: 50px;
+    }
+  }
+
+  &__slider-top {
+    margin-bottom: 50px;
+    @include min('lg') {
+      margin-bottom: 70px;
+      max-width: 1000px;
+      display:flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__slider {
+    max-width: 100%;
+
+    @include min('lg') {
+      padding-left: 0
+    }
+  }
+}
+
+.about-slide {
+  img {
+    height: 195px;
+    object-fit:cover;
+    display: block;
+    width: 100%;
+    margin-bottom: 35px;
+  }
+
+  p {
+    opacity: 0.8;
+    letter-spacing: 0.1em;
+  }
+}
+
+.about-slider {
+  position: relative;
+
+  @include min('xs') {
+    margin-right: -25%;
+  }
+ 
+  @include min(1500) {
+    .col {
+      padding-right: 100px;
+    }
+  }
 }
