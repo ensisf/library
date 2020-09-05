@@ -632,7 +632,7 @@ a {
     content: '';
     width: 400px;
     height: 400px;
-    background-image: url(../img/shape.svg);
+    background-image: url(./img/shape.svg);
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
@@ -1422,7 +1422,7 @@ textarea {
 
 .labelauty-checked-image {
   margin: auto;
-  background-image: url(../img/input-checked.png) !important;
+  background-image: url(./img/input-checked.png) !important;
   width: 10px !important;
   height: 10px !important;
   background-size: contain;
@@ -1590,7 +1590,7 @@ label[for*="labelauty"] {
 
 .page-aligner {
   background-color: #D8BF95;
-  background-image: url(../img/aligner-bg.jpg);
+  background-image: url(./img/aligner-bg.jpg);
   background-repeat: no-repeat;
   background-size: 15vw auto;
   background-position: 0 0; }
@@ -1836,14 +1836,14 @@ label[for*="labelauty"] {
   max-width: 480px; }
   .about__img::before {
     width: 565px;
-    background-image: url(../img/shape-2.svg);
+    background-image: url(./img/shape-2.svg);
     height: 565px;
     opacity: 1; }
 
 .about__mission {
   background: #D8BF95;
   color: rgba(0, 0, 0, 0.8);
-  background-image: url(../img/shape-1.svg);
+  background-image: url(./img/shape-1.svg);
   background-repeat: no-repeat;
   background-position: calc(375px / -2) 50%;
   background-size: 375px 375px;
@@ -2074,7 +2074,7 @@ label[for*="labelauty"] {
   padding: 102px 0 80px;
   background: #D8BF95;
   color: rgba(0, 0, 0, 0.8);
-  background-image: url(../img/shape-1.svg);
+  background-image: url(./img/shape-1.svg);
   background-repeat: no-repeat;
   background-position: -368px 60px; }
   .competitions__rest .ttl {
@@ -2091,7 +2091,7 @@ label[for*="labelauty"] {
 .competitions__about {
   background: #D8BF95;
   color: rgba(0, 0, 0, 0.8);
-  background-image: url(../img/shape-1.svg);
+  background-image: url(./img/shape-1.svg);
   background-repeat: no-repeat;
   background-position: -368px 50%;
   padding: 170px 0 90px; }
@@ -2580,4 +2580,4 @@ img.mfp-img {
 .fade-zoom.mfp-removing.mfp-bg {
   opacity: 0; }
 
-/*# sourceMappingURL=../maps/style.min.css.map */
+/*# sourceMappingURL=./maps/style.min.css.map */
