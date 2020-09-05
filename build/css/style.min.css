@@ -899,6 +899,9 @@ a {
   position: relative;
   z-index: 100;
   padding: 50px 0; }
+  @media (min-width: 1400px) {
+    .header {
+      margin-bottom: 65px; } }
   .header .container {
     max-width: 100%;
     display: flex;
