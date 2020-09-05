@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Title</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="canonical" href="http://site.com">
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="72x72" href="../img/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="../img/images/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../img/images/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="../img/images/favicon/manifest.json">
+    <link rel="mask-icon" href="../img/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+    <!-- / -->
+
+    <!-- Social -->
+    <!-- Google Authorship and Publisher Markup -->
+    <link rel="author" href="" />
+    <link rel="publisher" href="" />
+
+    <!-- Social: Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image:src" content="">
+
+    <!-- Social: Facebook / Open Graph -->
+    <meta property="fb:admins" content="">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="">
+    <meta property="og:image" content="" />
+    <meta property="og:description" content="">
+    <meta property="og:site_name" content="">
+
+
+    <!-- Social: Google+ / Schema.org  -->
+    <meta itemprop="name" content="">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="">
+    <!-- / -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,600&family=Spectral:wght@800&family=Tenor+Sans&display=swap" rel="stylesheet">
+    <link media="all" type="text/css" rel="stylesheet" href="./css/style.min.css">
+    <script>
+      (function(){
+        var path = window.path || '', // in header.php
+        file = path + '/img/images/sprite_symbol.svg',
+        revision = 5515;
+
+    if (!document.createElementNS || !document.createElementNS('http://www.w3.org/2000/svg', 'svg').createSVGRect)
+        return true;
+
+    var isLocalStorage = 'localStorage' in window && window['localStorage'] !== null,
+        request,
+        data,
+        insertIT = function() {
+            document.body.insertAdjacentHTML('afterbegin', data);
+},
+        insert = function() {
+            if (document.body) insertIT();
+            else document.addEventListener('DOMContentLoaded', insertIT);
+        };
+
+    if (isLocalStorage && localStorage.getItem('inlineSVGrev') == revision) {
+        data = localStorage.getItem('inlineSVGdata');
+        if (data) {
+            insert();
+            return true;
+        }
+    }
+
+    try {
+        request = new XMLHttpRequest();
+        request.open('GET', file, true);
+        request.onload = function() {
+            if (request.status >= 200 && request.status < 400) {
+                data = request.responseText;
+                insert();
+                if (isLocalStorage) {
+                    localStorage.setItem('inlineSVGdata', data);
+                    localStorage.setItem('inlineSVGrev', revision);
+                }
+            }
+        }
+        request.send();
+    } catch (e) {}
+      }())
+      
+    </script>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <div class="wrap__inner">
+        <!-- header -->
+        <header class="header">
+            <div class="container">
+              <div class="header__logo">
+                <a href="" class="logo" title="">Title</a>
+              </div>
+              <div class="header__nav">
+                <!-- main nav -->
+                <button class="btn btn--menu js-toggle-nav" data-href="#main-nav"><span class="lines"></span></button>
+                <nav class="nav nav--hidden">
+                  <ul class="menu" id="main-nav">
+                    <li class="menu-item"><a href=".html" title="">Про нас</a></li>
+                    <li class="menu-item current-menu-item"><a href=".html" title="">Каталог</a></li>
+                    <li class="menu-item">
+                      <a href=".html" title="">Конкурси</a>
+                      
+                    </li>
+                    <li class="menu-item">
+                      <a href=".html" title="">Для авторів  </a>
+                    </li>
+                    <li class="menu-item">
+                      <a href=".html" title="">Контакты </a>
+                    </li>
+                  </ul>
+                </nav>
+                <!-- main nav end -->
+              </div>
+            </div>
+        </header>
+        <!-- header end -->
+        <!-- main start-->
+        <main class="main">
+<!-- breadcrimbs -->
+<section class="breadcrumbs">
+	<div class="container">
+		<div class="breadcrumbs__list">
+			<span>
+				<a href="/">Главная</a>
+			</span>
+			<span>
+				Контакты
+			</span>
+		</div>
+	</div>
+</section>
+<!-- end breadcrimbs -->
+<!-- blog -->
+<section class="blog">
+  <div class="container">
+    <article class="article">
+      
+    </article>
+
+    <!-- pagination -->
+    <ul class="pagination">
+      <li><a class="pagination__item isCurrent" href="">1</a></li>
+      <li><a class="pagination__item" href="">2</a></li>
+      <li><a class="pagination__item" href="">3</a></li>
+      <li><a class="pagination__item" href="">4</a></li>
+      <li><a class="pagination__item" href="">5</a></li>
+      <li><a class="pagination__item" href="">6</a></li>
+      <li><span class="pagination__item disabled">/</span></li>
+      <li><a class="pagination__item" href="">12</a></li>
+      <li><a class="pagination__item" href="">
+        <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M6.66702 2.86102e-06C6.84257 1.43051e-05 7.01637 0.0350304 7.17821 0.10305C7.34005 0.171069 7.48668 0.270694 7.60953 0.396099C7.85981 0.651435 8 0.99474 8 1.35228C8 1.70982 7.85981 2.05313 7.60953 2.30847L3.21938 6.77099L7.60953 11.2322C7.85981 11.4875 8 11.8308 8 12.1884C8 12.5459 7.85981 12.8892 7.60953 13.1445C7.48677 13.2701 7.34019 13.3699 7.17834 13.438C7.01648 13.5061 6.84262 13.5411 6.66702 13.5411C6.49142 13.5411 6.3176 13.5061 6.15575 13.438C5.9939 13.3699 5.84727 13.2701 5.72451 13.1445L0.390469 7.72442C0.14019 7.46908 0 7.12578 0 6.76824C0 6.41069 0.14019 6.06747 0.390469 5.81214L5.72451 0.392015C5.84775 0.267411 5.99456 0.168604 6.15637 0.101299C6.31819 0.0339947 6.49177 -0.000444412 6.66702 2.86102e-06Z" fill="black"/>
+        </svg>
+      </a></li>
+      <li><a class="pagination__item" href="">
+        <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M1.33298 13.5411C1.15743 13.5411 0.983629 13.5061 0.821789 13.4381C0.659949 13.3701 0.513319 13.2704 0.390469 13.145C0.140189 12.8897 0 12.5464 0 12.1889C0 11.8313 0.140189 11.488 0.390469 11.2327L4.78062 6.77015L0.390469 2.30896C0.140189 2.05363 0 1.71032 0 1.35278C0 0.995238 0.140189 0.651932 0.390469 0.396596C0.51323 0.271038 0.659812 0.171242 0.821664 0.10313C0.983516 0.0350184 1.15738 0 1.33298 0C1.50858 0 1.6824 0.0350184 1.84425 0.10313C2.0061 0.171242 2.15273 0.271038 2.27549 0.396596L7.60953 5.81672C7.85981 6.07205 8 6.41536 8 6.7729C8 7.13044 7.85981 7.47367 7.60953 7.729L2.27549 13.1491C2.15225 13.2737 2.00544 13.3725 1.84363 13.4398C1.68181 13.5071 1.50823 13.5416 1.33298 13.5411Z" fill="black"/>
+        </svg>
+      </a></li>
+    </ul>
+    <!-- pagination end -->
+  </div>
+</section>
+<!-- blog end -->
+      </main>
+      <!-- main end-->
+      <!-- main footer -->
+      <footer class="footer">
+        <div class="container">
+          <div class="row footer__top-row">
+            <div class="col footer__top-logo">
+              <img src="img/f-logo-1.png" width="260" alt="">
+            </div>
+            <div class="col footer__top-logo">
+              <img src="img/f-logo-1.png" width="260" alt="">
+            </div>
+          </div>
+          <div class="row footer__row">
+            <div class="col col-12 col-xs-6"><img src="img/f-logo.png" width="138" alt=""></div>
+            <div class="col col-12 col-xs-6">
+              <div class="footer__inf">
+                <span>Телефон:</span>
+                <a href="tel:(044) 279 - 65 - 49">(044) 279 - 65 - 49</a>
+              </div>
+            </div>
+            <div class="col col-12 col-xs-6">
+              <div class="footer__inf">
+                <span>Email:</span>
+                <a href="mainto:info@nstdu.com.ua">info@nstdu.com.ua</a>
+              </div>
+            </div>
+            <div class="col col-12 col-xs-6">
+              <div class="copy">Сайт створено за підтримки</div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- main footer end-->
+    </div>
+  </div>
+  <!-- modal -->
+  <div class="modal mfp-hide" id="modal">
+    <div class="modal__inner">
+      <div class="modal__form-wrap ">
+        <form action="">
+          <div class="modal-form">
+            <div class="modal-form__item">
+              <input type="text" name="name" placeholder="Имя" required>
+              <input type="email" name="email" placeholder="E-mail" required>
+              <input type="tel" name="tel" placeholder="Телефон" required>
+            </div>
+            <div class="modal-form__item">
+              <input type="text" name="skype" placeholder="Skype" required>
+              <select name="" id="xxx" required>
+                <option value="" selected disabled>xxx</option>
+                <option value="">xxx</option>
+                <option value="">xxx</option>  
+                <option value="">xxx</option>
+                <option value="">xxx</option>
+                <option value="">xxx</option>
+                <option value="">xxx</option>
+                <option value="">xxx</option>
+                <option value="">xxx</option>
+                <option value="">xxx</option>
+                <option value="">xxx</option>
+              </select>
+            </div>
+            <div class="modal-form__item">
+              <textarea name="name" rows="8" cols="40" placeholder="Текст" required></textarea>
+              <input type="submit" value="Отправить">
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- modal end -->
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="../js/main.min.js"></script>
+  </body>
+</html>

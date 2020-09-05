@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Title</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="canonical" href="http://site.com">
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="72x72" href="../img/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="../img/images/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../img/images/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="../img/images/favicon/manifest.json">
+    <link rel="mask-icon" href="../img/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+    <!-- / -->
+
+    <!-- Social -->
+    <!-- Google Authorship and Publisher Markup -->
+    <link rel="author" href="" />
+    <link rel="publisher" href="" />
+
+    <!-- Social: Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image:src" content="">
+
+    <!-- Social: Facebook / Open Graph -->
+    <meta property="fb:admins" content="">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="">
+    <meta property="og:image" content="" />
+    <meta property="og:description" content="">
+    <meta property="og:site_name" content="">
+
+
+    <!-- Social: Google+ / Schema.org  -->
+    <meta itemprop="name" content="">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="">
+    <!-- / -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,600&family=Spectral:wght@800&family=Tenor+Sans&display=swap" rel="stylesheet">
+    <link media="all" type="text/css" rel="stylesheet" href="./css/style.min.css">
+    <script>
+      (function(){
+        var path = window.path || '', // in header.php
+        file = path + '/img/images/sprite_symbol.svg',
+        revision = 5515;
+
+    if (!document.createElementNS || !document.createElementNS('http://www.w3.org/2000/svg', 'svg').createSVGRect)
+        return true;
+
+    var isLocalStorage = 'localStorage' in window && window['localStorage'] !== null,
+        request,
+        data,
+        insertIT = function() {
+            document.body.insertAdjacentHTML('afterbegin', data);
+},
+        insert = function() {
+            if (document.body) insertIT();
+            else document.addEventListener('DOMContentLoaded', insertIT);
+        };
+
+    if (isLocalStorage && localStorage.getItem('inlineSVGrev') == revision) {
+        data = localStorage.getItem('inlineSVGdata');
+        if (data) {
+            insert();
+            return true;
+        }
+    }
+
+    try {
+        request = new XMLHttpRequest();
+        request.open('GET', file, true);
+        request.onload = function() {
+            if (request.status >= 200 && request.status < 400) {
+                data = request.responseText;
+                insert();
+                if (isLocalStorage) {
+                    localStorage.setItem('inlineSVGdata', data);
+                    localStorage.setItem('inlineSVGrev', revision);
+                }
+            }
+        }
+        request.send();
+    } catch (e) {}
+      }())
+      
+    </script>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <div class="wrap__inner">
+        <!-- header -->
+        <header class="header">
+            <div class="container">
+              <div class="header__logo">
+                <a href="" class="logo" title="">Title</a>
+              </div>
+              <div class="header__nav">
+                <!-- main nav -->
+                <button class="btn btn--menu js-toggle-nav" data-href="#main-nav"><span class="lines"></span></button>
+                <nav class="nav nav--hidden">
+                  <ul class="menu" id="main-nav">
+                    <li class="menu-item"><a href=".html" title="">Про нас</a></li>
+                    <li class="menu-item current-menu-item"><a href=".html" title="">Каталог</a></li>
+                    <li class="menu-item">
+                      <a href=".html" title="">Конкурси</a>
+                      
+                    </li>
+                    <li class="menu-item">
+                      <a href=".html" title="">Для авторів  </a>
+                    </li>
+                    <li class="menu-item">
+                      <a href=".html" title="">Контакты </a>
+                    </li>
+                  </ul>
+                </nav>
+                <!-- main nav end -->
+              </div>
+            </div>
+        </header>
+        <!-- header end -->
+        <!-- main start-->
+        <main class="main">
+<!-- breadcrimbs -->
+<section class="breadcrumbs">
+	<div class="container">
+		<div class="breadcrumbs__list">
+			<span>
+				<a href="/">Главная</a>
+			</span>
+			<span>
+				Контакты
+			</span>
+		</div>
+	</div>
+</section>
+<!-- end breadcrimbs -->
+<!-- blog -->
+<section class="for-authors">
+  <div class="page-top container">
+    <div class="row ">
+      <div class="col col-12 col-md-5">
+        <h1 class="ttl ttl--2">Для авторів</h1>
+      </div>
+      <div class="col col-12 col-md-7">
+        <div class="page-top__desc">
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan. Lorem Ipsum is simply dummy text of the printing and typesetting industry.  z</p>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan. Lorem Ipsum is simply dummy text of the printing and typesetting industry.  z</p>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan. Lorem Ipsum is simply dummy text of the printing and typesetting industry.  z</p>
+        </div>
+      </div>
+    </div>
+    <br><br>
+  </div>
+  <div class="container">
+  </div>
+</section>
+<!-- blog end -->
+      </main>
+      <!-- main end-->
+      <!-- main footer -->
+      <footer class="footer">
+        <div class="container">
+          <div class="row footer__top-row">
+            <div class="col footer__top-logo">
+              <img src="img/f-logo-1.png" width="260" alt="">
+            </div>
+            <div class="col footer__top-logo">
+              <img src="img/f-logo-1.png" width="260" alt="">
+            </div>
+          </div>
+          <div class="row footer__row">
+            <div class="col col-12 col-xs-6"><img src="img/f-logo.png" width="138" alt=""></div>
+            <div class="col col-12 col-xs-6">
+              <div class="footer__inf">
+                <span>Телефон:</span>
+                <a href="tel:(044) 279 - 65 - 49">(044) 279 - 65 - 49</a>
+              </div>
+            </div>
+            <div class="col col-12 col-xs-6">
+              <div class="footer__inf">
+                <span>Email:</span>
+                <a href="mainto:info@nstdu.com.ua">info@nstdu.com.ua</a>
+              </div>
+            </div>
+            <div class="col col-12 col-xs-6">
+              <div class="copy">Сайт створено за підтримки</div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- main footer end-->
+    </div>
+  </div>
+  <!-- modal -->
+  <div class="modal mfp-hide" id="modal">
+    <div class="modal__inner">
+      <div class="modal__form-wrap ">
+        <form action="">
+          <div class="modal-form">
+            <div class="modal-form__item">
+              <input type="text" name="name" placeholder="Имя" required>
+              <input type="email" name="email" placeholder="E-mail" required>
+              <input type="tel" name="tel" placeholder="Телефон" required>
+            </div>
+            <div class="modal-form__item">
+              <input type="text" name="skype" placeholder="Skype" required>
+              <select name="" id="xxx" required>
+                <option value="" selected disabled>xxx</option>
+                <option value="">xxx</option>
+                <option value="">xxx</option>  
+                <option value="">xxx</option>
+                <option value="">xxx</option>
+                <option value="">xxx</option>
+                <option value="">xxx</option>
+                <option value="">xxx</option>
+                <option value="">xxx</option>
+                <option value="">xxx</option>
+                <option value="">xxx</option>
+              </select>
+            </div>
+            <div class="modal-form__item">
+              <textarea name="name" rows="8" cols="40" placeholder="Текст" required></textarea>
+              <input type="submit" value="Отправить">
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- modal end -->
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="../js/main.min.js"></script>
+  </body>
+</html>

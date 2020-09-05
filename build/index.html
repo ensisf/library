@@ -1,0 +1,326 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Title</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="canonical" href="http://site.com">
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="72x72" href="../img/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="../img/images/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../img/images/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="../img/images/favicon/manifest.json">
+    <link rel="mask-icon" href="../img/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+    <!-- / -->
+
+    <!-- Social -->
+    <!-- Google Authorship and Publisher Markup -->
+    <link rel="author" href="" />
+    <link rel="publisher" href="" />
+
+    <!-- Social: Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image:src" content="">
+
+    <!-- Social: Facebook / Open Graph -->
+    <meta property="fb:admins" content="">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="">
+    <meta property="og:image" content="" />
+    <meta property="og:description" content="">
+    <meta property="og:site_name" content="">
+
+
+    <!-- Social: Google+ / Schema.org  -->
+    <meta itemprop="name" content="">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="">
+    <!-- / -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,600&family=Spectral:wght@800&family=Tenor+Sans&display=swap" rel="stylesheet">
+    <link media="all" type="text/css" rel="stylesheet" href="./css/style.min.css">
+    <script>
+      (function(){
+        var path = window.path || '', // in header.php
+        file = path + '/img/images/sprite_symbol.svg',
+        revision = 5515;
+
+    if (!document.createElementNS || !document.createElementNS('http://www.w3.org/2000/svg', 'svg').createSVGRect)
+        return true;
+
+    var isLocalStorage = 'localStorage' in window && window['localStorage'] !== null,
+        request,
+        data,
+        insertIT = function() {
+            document.body.insertAdjacentHTML('afterbegin', data);
+},
+        insert = function() {
+            if (document.body) insertIT();
+            else document.addEventListener('DOMContentLoaded', insertIT);
+        };
+
+    if (isLocalStorage && localStorage.getItem('inlineSVGrev') == revision) {
+        data = localStorage.getItem('inlineSVGdata');
+        if (data) {
+            insert();
+            return true;
+        }
+    }
+
+    try {
+        request = new XMLHttpRequest();
+        request.open('GET', file, true);
+        request.onload = function() {
+            if (request.status >= 200 && request.status < 400) {
+                data = request.responseText;
+                insert();
+                if (isLocalStorage) {
+                    localStorage.setItem('inlineSVGdata', data);
+                    localStorage.setItem('inlineSVGrev', revision);
+                }
+            }
+        }
+        request.send();
+    } catch (e) {}
+      }())
+      
+    </script>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <div class="wrap__inner">
+        <!-- header -->
+        <header class="header">
+            <div class="container">
+              <div class="header__logo">
+                <a href="" class="logo" title="">
+                  <img src="img/l-logo.png" alt="">
+                </a>
+              </div>
+              <div class="header__right">
+                <div class="header__nav">
+                  <nav class="nav nav--hidden">
+                    <ul class="menu" id="main-nav">
+                      <li class="menu-item"><a href=".html" title="">Про нас</a></li>
+                      <li class="menu-item current-menu-item"><a href=".html" title="">Каталог</a></li>
+                      <li class="menu-item">
+                        <a href=".html" title="">Конкурси</a>
+                        
+                      </li>
+                      <li class="menu-item">
+                        <a href=".html" title="">Для авторів  </a>
+                      </li>
+                      <li class="menu-item">
+                        <a href=".html" title="">Контакты </a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+                <a href="" class="header__search-link">
+                  <span>Пошук творів</span>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.6273 14.205L10.8273 9.38297C11.5953 8.29139 11.9743 6.97349 11.9037 5.64072C11.833 4.30796 11.3168 3.03753 10.4378 2.03324C9.55876 1.02895 8.36791 0.349057 7.05624 0.102515C5.74457 -0.144027 4.38811 0.057099 3.20443 0.673682C2.02076 1.29027 1.07848 2.28656 0.528744 3.50272C-0.0209942 4.71888 -0.146356 6.08443 0.172818 7.38035C0.491991 8.67626 1.23719 9.8274 2.28885 10.6491C3.34051 11.4709 4.63768 11.9156 5.97232 11.912C7.21152 11.912 8.41932 11.5219 9.42434 10.797L14.2243 15.6189C14.3165 15.7118 14.426 15.7855 14.5468 15.8358C14.6675 15.8861 14.797 15.912 14.9278 15.912C15.0586 15.912 15.1881 15.8861 15.3089 15.8358C15.4296 15.7855 15.5392 15.7118 15.6313 15.6189C15.8183 15.4309 15.9229 15.1763 15.9221 14.9111C15.9214 14.6459 15.8153 14.392 15.6273 14.205ZM5.97232 9.91196C5.18027 9.91632 4.40476 9.68544 3.74408 9.24857C3.08339 8.8117 2.56729 8.18849 2.26117 7.45798C1.95504 6.72747 1.87269 5.92255 2.02453 5.14518C2.17638 4.36781 2.55558 3.65302 3.1141 3.09141C3.67263 2.52979 4.38531 2.14665 5.16183 1.99052C5.93835 1.83438 6.74376 1.9123 7.47595 2.21439C8.20814 2.51649 8.83415 3.02915 9.27466 3.68742C9.71516 4.34568 9.9503 5.1199 9.95031 5.91196C9.95176 6.43581 9.85004 6.95479 9.65091 7.43931C9.45178 7.92383 9.15915 8.36438 8.78976 8.73582C8.42037 9.10725 7.98143 9.4023 7.49801 9.6041C7.0146 9.8059 6.49616 9.91052 5.97232 9.91196Z" fill="currentColor"/>
+                  </svg>
+                </a>
+              </div>
+              <button class="btn btn--menu js-toggle-nav header__btn" data-href="#main-nav"><span class="lines"></span></button>
+            </div>
+        </header>
+        <!-- header end -->
+        <!-- main start-->
+        <main class="main">
+<div class="index">
+  <div class="page-aligner page-aligner--bg-secondary person__aligner index-slider-box">
+    <div class="index-slider js-index-slider">
+      <div class="index-slide ">
+        <div class="page-top container person__container about__top-container">
+          <div class="row">
+            <div class="col col-12 col-md-6 about__top-content">
+              <h1 class="ttl ttl--1">Унікальний веб сайт</h1>
+              <div class="page-top__desc page-top__desc--top">
+                <p>для авторів театральних п’єес від спілки театралів україни </p>
+              </div>
+            </div>
+            <div class="col col-12 col-md-6 about__top-img">
+              <div class="hasShape about__img">
+                <img src="img/is.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="index-slide ">
+        <div class="page-top container person__container about__top-container">
+          <div class="row">
+            <div class="col col-12 col-md-6 about__top-content">
+              <h1 class="ttl ttl--1">Унікальний веб сайт</h1>
+              <div class="page-top__desc page-top__desc--top">
+                <p>для авторів театральних п’єес від спілки театралів україни </p>
+              </div>
+            </div>
+            <div class="col col-12 col-md-6 about__top-img">
+              <div class="hasShape about__img">
+                <img src="img/is.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="index-slide ">
+        <div class="page-top container person__container about__top-container">
+          <div class="row">
+            <div class="col col-12 col-md-6 about__top-content">
+              <h1 class="ttl ttl--1">Унікальний веб сайт</h1>
+              <div class="page-top__desc page-top__desc--top">
+                <p>для авторів театральних п’єес від спілки театралів україни </p>
+              </div>
+            </div>
+            <div class="col col-12 col-md-6 about__top-img">
+              <div class="hasShape about__img">
+                <img src="img/is.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="index-slider-nav">
+      <div class="index-slider-nav__dots js-index-dots"></div>
+      <div class="index-slider-nav__btns">
+        <button type="button" class="slider-btn js-index-next">
+          <svg width="30" height="16" viewBox="0 0 30 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.34371 8.82952C0.344063 8.82987 0.344357 8.83028 0.344767 8.83063L6.46805 14.9244C6.92678 15.3809 7.66875 15.3792 8.12537 14.9204C8.58193 14.4617 8.58018 13.7197 8.12144 13.2631L4.01027 9.17188H28.8281C29.4754 9.17188 30 8.64723 30 8C30 7.35278 29.4754 6.82813 28.8281 6.82813H4.01033L8.12139 2.73688C8.58012 2.28032 8.58187 1.53834 8.12531 1.07961C7.66869 0.620766 6.92666 0.619184 6.46799 1.07563L0.344707 7.16938C0.344355 7.16973 0.344063 7.17014 0.343651 7.17049C-0.115313 7.62858 -0.113848 8.37295 0.34371 8.82952Z" fill="#D8BF95"/>
+          </svg>
+        </button>
+        <button type="button" class="slider-btn js-index-prev">
+          <svg width="30" height="16" viewBox="0 0 30 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M29.6563 7.17048C29.6559 7.17013 29.6556 7.16972 29.6552 7.16937L23.532 1.07562C23.0732 0.619117 22.3312 0.620816 21.8746 1.07961C21.4181 1.53834 21.4198 2.28031 21.8786 2.73687L25.9897 6.82812H1.17188C0.524648 6.82812 0 7.35277 0 8C0 8.64722 0.524648 9.17187 1.17188 9.17187H25.9897L21.8786 13.2631C21.4199 13.7197 21.4181 14.4617 21.8747 14.9204C22.3313 15.3792 23.0733 15.3808 23.532 14.9244L29.6553 8.83062C29.6556 8.83027 29.6559 8.82986 29.6563 8.82951C30.1153 8.37142 30.1138 7.62705 29.6563 7.17048Z" fill="#D8BF95"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="about__mission index-stats">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12 col-sm-6">
+        <div class="index-stat">
+          <i>2734</i>
+          <img src="img/sl.png" alt="">
+          <div class="ttl ttl--2"><a class="reverse" href="">Театральні п’єси</a></div>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan. </p>
+          <a href="" class="show-more">
+            <span>2734 Авторів</span>
+            <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15.8167 3.55759C15.8165 3.5574 15.8163 3.55719 15.8161 3.557L12.5504 0.306998C12.3057 0.0635292 11.91 0.0644352 11.6665 0.309123C11.423 0.553779 11.4239 0.949498 11.6686 1.193L13.8612 3.375H0.625C0.279813 3.375 0 3.65481 0 4C0 4.34519 0.279813 4.625 0.625 4.625H13.8612L11.6686 6.807C11.4239 7.0505 11.423 7.44622 11.6665 7.69087C11.91 7.93559 12.3058 7.93644 12.5504 7.693L15.8162 4.443C15.8163 4.44281 15.8165 4.44259 15.8167 4.44241C16.0615 4.19809 16.0607 3.80109 15.8167 3.55759Z" fill="black"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="col col-12 col-sm-6">
+        <div class="index-stat">
+          <i>2734</i>
+          <img src="img/sl.png" alt="">
+          <div class="ttl ttl--2"><a class="reverse" href="">Автори п’єс</a></div>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan. </p>
+          <a href="" class="show-more">
+            <span>2734 Авторів</span>
+            <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15.8167 3.55759C15.8165 3.5574 15.8163 3.55719 15.8161 3.557L12.5504 0.306998C12.3057 0.0635292 11.91 0.0644352 11.6665 0.309123C11.423 0.553779 11.4239 0.949498 11.6686 1.193L13.8612 3.375H0.625C0.279813 3.375 0 3.65481 0 4C0 4.34519 0.279813 4.625 0.625 4.625H13.8612L11.6686 6.807C11.4239 7.0505 11.423 7.44622 11.6665 7.69087C11.91 7.93559 12.3058 7.93644 12.5504 7.693L15.8162 4.443C15.8163 4.44281 15.8165 4.44259 15.8167 4.44241C16.0615 4.19809 16.0607 3.80109 15.8167 3.55759Z" fill="black"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+     
+    </div>
+  </div>
+</div>
+      </main>
+      <!-- main end-->
+      <!-- main footer -->
+      <footer class="footer">
+        <div class="container">
+          <div class="row footer__top-row">
+            <div class="col footer__top-logo">
+              <img src="img/f-logo-1.png" width="260" alt="">
+            </div>
+            <div class="col footer__top-logo">
+              <img src="img/f-logo-1.png" width="260" alt="">
+            </div>
+          </div>
+          <div class="row footer__row">
+            <div class="col col-12 col-xs-6"><img src="img/f-logo.png" width="138" alt=""></div>
+            <div class="col col-12 col-xs-6">
+              <div class="footer__inf">
+                <span>Телефон:</span>
+                <a href="tel:(044) 279 - 65 - 49">(044) 279 - 65 - 49</a>
+              </div>
+            </div>
+            <div class="col col-12 col-xs-6">
+              <div class="footer__inf">
+                <span>Email:</span>
+                <a href="mainto:info@nstdu.com.ua">info@nstdu.com.ua</a>
+              </div>
+            </div>
+            <div class="col col-12 col-xs-6">
+              <div class="copy">Сайт створено за підтримки</div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- main footer end-->
+    </div>
+  </div>
+  <!-- modal -->
+  <div class="modal mfp-hide" id="modal">
+    <div class="modal__inner">
+      <div class="modal__form-wrap ">
+        <form action="">
+          <div class="modal-form">
+            <div class="modal-form__item">
+              <input type="text" name="name" placeholder="Имя" required>
+              <input type="email" name="email" placeholder="E-mail" required>
+              <input type="tel" name="tel" placeholder="Телефон" required>
+            </div>
+            <div class="modal-form__item">
+              <input type="text" name="skype" placeholder="Skype" required>
+              <select name="" id="xxx" required>
+                <option value="" selected disabled>xxx</option>
+                <option value="">xxx</option>
+                <option value="">xxx</option>  
+                <option value="">xxx</option>
+                <option value="">xxx</option>
+                <option value="">xxx</option>
+                <option value="">xxx</option>
+                <option value="">xxx</option>
+                <option value="">xxx</option>
+                <option value="">xxx</option>
+                <option value="">xxx</option>
+              </select>
+            </div>
+            <div class="modal-form__item">
+              <textarea name="name" rows="8" cols="40" placeholder="Текст" required></textarea>
+              <input type="submit" value="Отправить">
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- modal end -->
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="../js/main.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Title</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="canonical" href="http://site.com">
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="72x72" href="../img/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="../img/images/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../img/images/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="../img/images/favicon/manifest.json">
+    <link rel="mask-icon" href="../img/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+    <!-- / -->
+
+    <!-- Social -->
+    <!-- Google Authorship and Publisher Markup -->
+    <link rel="author" href="" />
+    <link rel="publisher" href="" />
+
+    <!-- Social: Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image:src" content="">
+
+    <!-- Social: Facebook / Open Graph -->
+    <meta property="fb:admins" content="">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="">
+    <meta property="og:image" content="" />
+    <meta property="og:description" content="">
+    <meta property="og:site_name" content="">
+
+
+    <!-- Social: Google+ / Schema.org  -->
+    <meta itemprop="name" content="">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="">
+    <!-- / -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,600&family=Spectral:wght@800&family=Tenor+Sans&display=swap" rel="stylesheet">
+    <link media="all" type="text/css" rel="stylesheet" href="./css/style.min.css">
+    <script>
+      (function(){
+        var path = window.path || '', // in header.php
+        file = path + '/img/images/sprite_symbol.svg',
+        revision = 5515;
+
+    if (!document.createElementNS || !document.createElementNS('http://www.w3.org/2000/svg', 'svg').createSVGRect)
+        return true;
+
+    var isLocalStorage = 'localStorage' in window && window['localStorage'] !== null,
+        request,
+        data,
+        insertIT = function() {
+            document.body.insertAdjacentHTML('afterbegin', data);
+},
+        insert = function() {
+            if (document.body) insertIT();
+            else document.addEventListener('DOMContentLoaded', insertIT);
+        };
+
+    if (isLocalStorage && localStorage.getItem('inlineSVGrev') == revision) {
+        data = localStorage.getItem('inlineSVGdata');
+        if (data) {
+            insert();
+            return true;
+        }
+    }
+
+    try {
+        request = new XMLHttpRequest();
+        request.open('GET', file, true);
+        request.onload = function() {
+            if (request.status >= 200 && request.status < 400) {
+                data = request.responseText;
+                insert();
+                if (isLocalStorage) {
+                    localStorage.setItem('inlineSVGdata', data);
+                    localStorage.setItem('inlineSVGrev', revision);
+                }
+            }
+        }
+        request.send();
+    } catch (e) {}
+      }())
+      
+    </script>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <div class="wrap__inner">
+        <!-- header -->
+        <header class="header">
+            <div class="container">
+              <div class="header__logo">
+                <a href="" class="logo" title="">
+                  <img src="img/l-logo.png" alt="">
+                </a>
+              </div>
+              <div class="header__right">
+                <div class="header__nav">
+                  <nav class="nav nav--hidden">
+                    <ul class="menu" id="main-nav">
+                      <li class="menu-item"><a href=".html" title="">Про нас</a></li>
+                      <li class="menu-item current-menu-item"><a href=".html" title="">Каталог</a></li>
+                      <li class="menu-item">
+                        <a href=".html" title="">Конкурси</a>
+                        
+                      </li>
+                      <li class="menu-item">
+                        <a href=".html" title="">Для авторів  </a>
+                      </li>
+                      <li class="menu-item">
+                        <a href=".html" title="">Контакты </a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+                <a href="" class="header__search-link">
+                  <span>Пошук творів</span>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.6273 14.205L10.8273 9.38297C11.5953 8.29139 11.9743 6.97349 11.9037 5.64072C11.833 4.30796 11.3168 3.03753 10.4378 2.03324C9.55876 1.02895 8.36791 0.349057 7.05624 0.102515C5.74457 -0.144027 4.38811 0.057099 3.20443 0.673682C2.02076 1.29027 1.07848 2.28656 0.528744 3.50272C-0.0209942 4.71888 -0.146356 6.08443 0.172818 7.38035C0.491991 8.67626 1.23719 9.8274 2.28885 10.6491C3.34051 11.4709 4.63768 11.9156 5.97232 11.912C7.21152 11.912 8.41932 11.5219 9.42434 10.797L14.2243 15.6189C14.3165 15.7118 14.426 15.7855 14.5468 15.8358C14.6675 15.8861 14.797 15.912 14.9278 15.912C15.0586 15.912 15.1881 15.8861 15.3089 15.8358C15.4296 15.7855 15.5392 15.7118 15.6313 15.6189C15.8183 15.4309 15.9229 15.1763 15.9221 14.9111C15.9214 14.6459 15.8153 14.392 15.6273 14.205ZM5.97232 9.91196C5.18027 9.91632 4.40476 9.68544 3.74408 9.24857C3.08339 8.8117 2.56729 8.18849 2.26117 7.45798C1.95504 6.72747 1.87269 5.92255 2.02453 5.14518C2.17638 4.36781 2.55558 3.65302 3.1141 3.09141C3.67263 2.52979 4.38531 2.14665 5.16183 1.99052C5.93835 1.83438 6.74376 1.9123 7.47595 2.21439C8.20814 2.51649 8.83415 3.02915 9.27466 3.68742C9.71516 4.34568 9.9503 5.1199 9.95031 5.91196C9.95176 6.43581 9.85004 6.95479 9.65091 7.43931C9.45178 7.92383 9.15915 8.36438 8.78976 8.73582C8.42037 9.10725 7.98143 9.4023 7.49801 9.6041C7.0146 9.8059 6.49616 9.91052 5.97232 9.91196Z" fill="currentColor"/>
+                  </svg>
+                </a>
+              </div>
+              <button class="btn btn--menu js-toggle-nav header__btn" data-href="#main-nav"><span class="lines"></span></button>
+            </div>
+        </header>
+        <!-- header end -->
+        <!-- main start-->
+        <main class="main">
+<div class="container">
+  <div class="icons-preview">
+    
+          <div class="icon-box">
+            <code class="icon-box__txt">icon-arrow-next</code>
+            <svg class="svg-icon" width="50" height="50" aria-hidden="true">
+              <use xlink:href="#icon-arrow-next"></use>
+            </svg>
+          </div>
+          <div class="icon-box">
+            <code class="icon-box__txt">icon-arrow-prev</code>
+            <svg class="svg-icon" width="50" height="50" aria-hidden="true">
+              <use xlink:href="#icon-arrow-prev"></use>
+            </svg>
+          </div>
+          <div class="icon-box">
+            <code class="icon-box__txt">icon-bed</code>
+            <svg class="svg-icon" width="50" height="50" aria-hidden="true">
+              <use xlink:href="#icon-bed"></use>
+            </svg>
+          </div>
+          <div class="icon-box">
+            <code class="icon-box__txt">icon-board-1</code>
+            <svg class="svg-icon" width="50" height="50" aria-hidden="true">
+              <use xlink:href="#icon-board-1"></use>
+            </svg>
+          </div>
+          <div class="icon-box">
+            <code class="icon-box__txt">icon-board</code>
+            <svg class="svg-icon" width="50" height="50" aria-hidden="true">
+              <use xlink:href="#icon-board"></use>
+            </svg>
+          </div>
+          <div class="icon-box">
+            <code class="icon-box__txt">icon-calendar</code>
+            <svg class="svg-icon" width="50" height="50" aria-hidden="true">
+              <use xlink:href="#icon-calendar"></use>
+            </svg>
+          </div>
+          <div class="icon-box">
+            <code class="icon-box__txt">icon-cup</code>
+            <svg class="svg-icon" width="50" height="50" aria-hidden="true">
+              <use xlink:href="#icon-cup"></use>
+            </svg>
+          </div>
+          <div class="icon-box">
+            <code class="icon-box__txt">icon-discount</code>
+            <svg class="svg-icon" width="50" height="50" aria-hidden="true">
+              <use xlink:href="#icon-discount"></use>
+            </svg>
+          </div>
+          <div class="icon-box">
+            <code class="icon-box__txt">icon-earth</code>
+            <svg class="svg-icon" width="50" height="50" aria-hidden="true">
+              <use xlink:href="#icon-earth"></use>
+            </svg>
+          </div>
+          <div class="icon-box">
+            <code class="icon-box__txt">icon-envelope</code>
+            <svg class="svg-icon" width="50" height="50" aria-hidden="true">
+              <use xlink:href="#icon-envelope"></use>
+            </svg>
+          </div>
+          <div class="icon-box">
+            <code class="icon-box__txt">icon-fb</code>
+            <svg class="svg-icon" width="50" height="50" aria-hidden="true">
+              <use xlink:href="#icon-fb"></use>
+            </svg>
+          </div>
+          <div class="icon-box">
+            <code class="icon-box__txt">icon-gp</code>
+            <svg class="svg-icon" width="50" height="50" aria-hidden="true">
+              <use xlink:href="#icon-gp"></use>
+            </svg>
+          </div>
+          <div class="icon-box">
+            <code class="icon-box__txt">icon-inst</code>
+            <svg class="svg-icon" width="50" height="50" aria-hidden="true">
+              <use xlink:href="#icon-inst"></use>
+            </svg>
+          </div>
+          <div class="icon-box">
+            <code class="icon-box__txt">icon-like</code>
+            <svg class="svg-icon" width="50" height="50" aria-hidden="true">
+              <use xlink:href="#icon-like"></use>
+            </svg>
+          </div>
+          <div class="icon-box">
+            <code class="icon-box__txt">icon-marker-map</code>
+            <svg class="svg-icon" width="50" height="50" aria-hidden="true">
+              <use xlink:href="#icon-marker-map"></use>
+            </svg>
+          </div>
+          <div class="icon-box">
+            <code class="icon-box__txt">icon-marker</code>
+            <svg class="svg-icon" width="50" height="50" aria-hidden="true">
+              <use xlink:href="#icon-marker"></use>
+            </svg>
+          </div>
+          <div class="icon-box">
+            <code class="icon-box__txt">icon-plane</code>
+            <svg class="svg-icon" width="50" height="50" aria-hidden="true">
+              <use xlink:href="#icon-plane"></use>
+            </svg>
+          </div>
+          <div class="icon-box">
+            <code class="icon-box__txt">icon-search</code>
+            <svg class="svg-icon" width="50" height="50" aria-hidden="true">
+              <use xlink:href="#icon-search"></use>
+            </svg>
+          </div>
+          <div class="icon-box">
+            <code class="icon-box__txt">icon-spoon</code>
+            <svg class="svg-icon" width="50" height="50" aria-hidden="true">
+              <use xlink:href="#icon-spoon"></use>
+            </svg>
+          </div>
+          <div class="icon-box">
+            <code class="icon-box__txt">icon-tel</code>
+            <svg class="svg-icon" width="50" height="50" aria-hidden="true">
+              <use xlink:href="#icon-tel"></use>
+            </svg>
+          </div>
+          <div class="icon-box">
+            <code class="icon-box__txt">icon-tw</code>
+            <svg class="svg-icon" width="50" height="50" aria-hidden="true">
+              <use xlink:href="#icon-tw"></use>
+            </svg>
+          </div>
+          <div class="icon-box">
+            <code class="icon-box__txt">icon-user</code>
+            <svg class="svg-icon" width="50" height="50" aria-hidden="true">
+              <use xlink:href="#icon-user"></use>
+            </svg>
+          </div>
+          <div class="icon-box">
+            <code class="icon-box__txt">icon-yt</code>
+            <svg class="svg-icon" width="50" height="50" aria-hidden="true">
+              <use xlink:href="#icon-yt"></use>
+            </svg>
+          </div>
+  </div>
+
+  <div class="form-control">
+    <div class="form-control__label">Ім''я</div>
+    <input type="text"/>
+  </div>
+  <div class="form-control">
+    <div class="form-control__label">Ім''я</div>
+    <textarea rows="5 "></textarea>
+  </div>
+  <div class="form-control">
+    <div class="form-control__label">Ім''я</div>
+    <select>
+      <option>option</option>
+      <option>option</option>
+      <option>option</option>
+      <option>option</option>
+    </select>
+    <br>
+    <button class="btn">Відправити</button>
+    <button class="btn btn--primary">Відправити</button>
+    <br>
+    <br>
+    <input type="checkbox" name="" id="">
+
+    <!-- breadcrimbs -->
+    <section class="breadcrumbs">
+    	<div class="container">
+    		<div class="breadcrumbs__list">
+    			<span>
+    				<a href="/">Главная</a>
+    			</span>
+    			<span>
+    				Контакты
+    			</span>
+    		</div>
+    	</div>
+    </section>
+    <!-- end breadcrimbs -->
+  </div>
+ 
+  <style>
+    .icons-preview{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .icon-box{
+      width: 20%;
+      text-align:center;
+    }
+  </style>
+</div>
+      </main>
+      <!-- main end-->
+      <!-- main footer -->
+      <footer class="footer">
+        <div class="container">
+          <div class="row footer__top-row">
+            <div class="col footer__top-logo">
+              <img src="img/f-logo-1.png" width="260" alt="">
+            </div>
+            <div class="col footer__top-logo">
+              <img src="img/f-logo-1.png" width="260" alt="">
+            </div>
+          </div>
+          <div class="row footer__row">
+            <div class="col col-12 col-xs-6"><img src="img/f-logo.png" width="138" alt=""></div>
+            <div class="col col-12 col-xs-6">
+              <div class="footer__inf">
+                <span>Телефон:</span>
+                <a href="tel:(044) 279 - 65 - 49">(044) 279 - 65 - 49</a>
+              </div>
+            </div>
+            <div class="col col-12 col-xs-6">
+              <div class="footer__inf">
+                <span>Email:</span>
+                <a href="mainto:info@nstdu.com.ua">info@nstdu.com.ua</a>
+              </div>
+            </div>
+            <div class="col col-12 col-xs-6">
+              <div class="copy">Сайт створено за підтримки</div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- main footer end-->
+    </div>
+  </div>
+  <!-- modal -->
+  <div class="modal mfp-hide" id="modal">
+    <div class="modal__inner">
+      <div class="modal__form-wrap ">
+        <form action="">
+          <div class="modal-form">
+            <div class="modal-form__item">
+              <input type="text" name="name" placeholder="Имя" required>
+              <input type="email" name="email" placeholder="E-mail" required>
+              <input type="tel" name="tel" placeholder="Телефон" required>
+            </div>
+            <div class="modal-form__item">
+              <input type="text" name="skype" placeholder="Skype" required>
+              <select name="" id="xxx" required>
+                <option value="" selected disabled>xxx</option>
+                <option value="">xxx</option>
+                <option value="">xxx</option>  
+                <option value="">xxx</option>
+                <option value="">xxx</option>
+                <option value="">xxx</option>
+                <option value="">xxx</option>
+                <option value="">xxx</option>
+                <option value="">xxx</option>
+                <option value="">xxx</option>
+                <option value="">xxx</option>
+              </select>
+            </div>
+            <div class="modal-form__item">
+              <textarea name="name" rows="8" cols="40" placeholder="Текст" required></textarea>
+              <input type="submit" value="Отправить">
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- modal end -->
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="../js/main.min.js"></script>
+  </body>
+</html>
