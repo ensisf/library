@@ -1,5 +1,4 @@
 .index-slider {
-
 }
 .index-slide {
   padding-top: 60px;
@@ -11,9 +10,9 @@
     display: block;
     object-fit: cover;
     width: 100%;
-    
+
     height: 436px;
-    @include min('sm') {
+    @include min("sm") {
       max-width: 567px;
     }
   }
@@ -26,11 +25,122 @@
     right: -135px;
     height: 540px;
   }
-  .page-top__desc--top{
+  .page-top__desc--top {
     font-size: 18px;
     max-width: 360px;
     &::before {
-      content:none;
+      content: none;
+    }
+  }
+}
+
+.index-slider-nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 950px;
+  padding-top: 115px;
+  padding-bottom: 70px;
+  
+  @include max('sm') {
+    padding-top: 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.slick-dots {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+
+  @include max('sm') {
+    margin-bottom: 50px;
+  }
+
+  li {
+    width: 41px;
+    color: $primary;
+    cursor: pointer;
+    opacity: 0.4;
+    transition:0.3s;
+    button {
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 17px;
+      letter-spacing: 0.1em;
+      border: none;
+      background: none;
+      padding-bottom: 20px;
+      padding-left: 0;
+      &:focus {
+        outline: none;
+      }
+      &::before {
+        content: '0';
+      }
+      
+    }
+    &.slick-active {
+      width: 82px;
+      opacity: 1;
+    }
+    &:hover {
+      opacity: 1;
+    }
+    &:not(:last-child) {
+      margin-right: 18px;
+    }
+    border-bottom: 2px solid currentColor;
+    &:nth-child(n + 10) {
+      button::before {
+        content: none
+      }
+    }
+  }
+}
+
+.index-slider-box {
+  background: none;
+  margin-bottom: 0 !important;
+}
+.index-stats {
+  @include min('sm') {
+    .container {
+      max-width: 880px;
+    }
+    .row {
+      justify-content: space-between;
+    }
+    .col {
+      max-width: 375px;
+    }
+  }
+}
+.index-stat {
+  
+  img {
+    height: 195px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+  .ttl {
+    @include min('sm') {
+      min-height: 104px;
+    }
+    a {
+      font-family: $font-family2;
+      color: $secondary;
+  
+      &:hover {
+        opacity: 0.4;
+        text-decoration: none;
+      }
     }
   }
 }

@@ -130,6 +130,11 @@
     border: none;
     background-color: transparent;
     padding: 0;
+    color: $primary;
+    &:hover {
+      color: $primary;
+      background: none;
+    }
 
     .lines{
       position: absolute;

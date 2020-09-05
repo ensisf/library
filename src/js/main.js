@@ -58,7 +58,9 @@ jQuery(document).ready($ => {
       nextArrow: '.js-index-next',
       infinite: true,
       prevArrow: '.js-index-prev',
-      fade: true
+      fade: true,
+      dots: true,
+      appendDots: '.js-index-dots'
     })
 
 });

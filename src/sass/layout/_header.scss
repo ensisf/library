@@ -1,3 +1,95 @@
 .header{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.1em;
+  position: relative;
+  z-index: 100;
+  padding: 50px 0;
+  .container {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
 
+    @include min(1500) {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+  }
+  &__logo {
+    margin-right: 30px;
+    @include min('lg') {
+      margin-right: 90px;
+    }
+  }
+  &__right {
+    flex: 1;
+    display:flex;
+
+    @include max(1100) {
+      position: fixed;
+      text-align: center;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      flex-direction: column;
+      background-color: $secondary;
+      transition: 0.3s;
+
+      opacity: 0;
+      pointer-events: none;
+      visibility: hidden;
+
+      body.navIn & {
+        opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+      }
+    }
+  }
+  &__nav {
+    flex: 1;
+    @include max(1100) {
+      .menu {
+        display: block;
+        text-align: center;
+      }
+    }
+  }
+  &__search-link {
+    display: flex;
+    align-items: center;
+    @include max(1100) {
+      justify-content:center;
+      margin-bottom: 50px;
+    }
+
+    svg {
+      margin-left: 20px;
+    }
+  }
+
+  &__btn {
+    margin-left: auto;
+    position: fixed;
+    z-index: 10;
+    top: 20px;
+    right: 20px;
+    &:focus {
+      background: none;
+    }
+    @include min(1100) {
+      display: none;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: #fff;
+
+    &:hover {
+      color: $primary;
+    }
+  }
 }

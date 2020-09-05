@@ -10,11 +10,19 @@
 }
 
 .menu-item{
-
+  margin: 30px 0;
+  a {
+    display: block;
+  }
+  &:not(:last-child) {
+    @include min(1100) {
+      margin-right: 45px;
+    }
+  }
 }
 
 .current-menu-item{
-
+  color: $primary;
 }
 
 .sub-menu{
