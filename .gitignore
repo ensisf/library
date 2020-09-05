@@ -1,9 +1,9 @@
 /node_modules
 /maps
-/css
+# /css
 /fonts
-/img
-/js
-/build
+# /img
+# /js
+# /build
 /src/design
 

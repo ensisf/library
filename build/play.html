@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Title</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="canonical" href="http://site.com">
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="72x72" href="../img/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="../img/images/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../img/images/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="../img/images/favicon/manifest.json">
+    <link rel="mask-icon" href="../img/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+    <!-- / -->
+
+    <!-- Social -->
+    <!-- Google Authorship and Publisher Markup -->
+    <link rel="author" href="" />
+    <link rel="publisher" href="" />
+
+    <!-- Social: Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image:src" content="">
+
+    <!-- Social: Facebook / Open Graph -->
+    <meta property="fb:admins" content="">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="">
+    <meta property="og:image" content="" />
+    <meta property="og:description" content="">
+    <meta property="og:site_name" content="">
+
+
+    <!-- Social: Google+ / Schema.org  -->
+    <meta itemprop="name" content="">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="">
+    <!-- / -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,600&family=Spectral:wght@800&family=Tenor+Sans&display=swap" rel="stylesheet">
+    <link media="all" type="text/css" rel="stylesheet" href="./css/style.min.css">
+    <script>
+      (function(){
+        var path = window.path || '', // in header.php
+        file = path + '/img/images/sprite_symbol.svg',
+        revision = 5515;
+
+    if (!document.createElementNS || !document.createElementNS('http://www.w3.org/2000/svg', 'svg').createSVGRect)
+        return true;
+
+    var isLocalStorage = 'localStorage' in window && window['localStorage'] !== null,
+        request,
+        data,
+        insertIT = function() {
+            document.body.insertAdjacentHTML('afterbegin', data);
+},
+        insert = function() {
+            if (document.body) insertIT();
+            else document.addEventListener('DOMContentLoaded', insertIT);
+        };
+
+    if (isLocalStorage && localStorage.getItem('inlineSVGrev') == revision) {
+        data = localStorage.getItem('inlineSVGdata');
+        if (data) {
+            insert();
+            return true;
+        }
+    }
+
+    try {
+        request = new XMLHttpRequest();
+        request.open('GET', file, true);
+        request.onload = function() {
+            if (request.status >= 200 && request.status < 400) {
+                data = request.responseText;
+                insert();
+                if (isLocalStorage) {
+                    localStorage.setItem('inlineSVGdata', data);
+                    localStorage.setItem('inlineSVGrev', revision);
+                }
+            }
+        }
+        request.send();
+    } catch (e) {}
+      }())
+      
+    </script>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <div class="wrap__inner">
+        <!-- header -->
+        <header class="header">
+            <div class="container">
+              <div class="header__logo">
+                <a href="" class="logo" title="">
+                  <img src="img/l-logo.png" alt="">
+                </a>
+              </div>
+              <div class="header__right">
+                <div class="header__nav">
+                  <nav class="nav nav--hidden">
+                    <ul class="menu" id="main-nav">
+                      <li class="menu-item"><a href=".html" title="">Про нас</a></li>
+                      <li class="menu-item current-menu-item"><a href=".html" title="">Каталог</a></li>
+                      <li class="menu-item">
+                        <a href=".html" title="">Конкурси</a>
+                        
+                      </li>
+                      <li class="menu-item">
+                        <a href=".html" title="">Для авторів  </a>
+                      </li>
+                      <li class="menu-item">
+                        <a href=".html" title="">Контакты </a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+                <a href="" class="header__search-link">
+                  <span>Пошук творів</span>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.6273 14.205L10.8273 9.38297C11.5953 8.29139 11.9743 6.97349 11.9037 5.64072C11.833 4.30796 11.3168 3.03753 10.4378 2.03324C9.55876 1.02895 8.36791 0.349057 7.05624 0.102515C5.74457 -0.144027 4.38811 0.057099 3.20443 0.673682C2.02076 1.29027 1.07848 2.28656 0.528744 3.50272C-0.0209942 4.71888 -0.146356 6.08443 0.172818 7.38035C0.491991 8.67626 1.23719 9.8274 2.28885 10.6491C3.34051 11.4709 4.63768 11.9156 5.97232 11.912C7.21152 11.912 8.41932 11.5219 9.42434 10.797L14.2243 15.6189C14.3165 15.7118 14.426 15.7855 14.5468 15.8358C14.6675 15.8861 14.797 15.912 14.9278 15.912C15.0586 15.912 15.1881 15.8861 15.3089 15.8358C15.4296 15.7855 15.5392 15.7118 15.6313 15.6189C15.8183 15.4309 15.9229 15.1763 15.9221 14.9111C15.9214 14.6459 15.8153 14.392 15.6273 14.205ZM5.97232 9.91196C5.18027 9.91632 4.40476 9.68544 3.74408 9.24857C3.08339 8.8117 2.56729 8.18849 2.26117 7.45798C1.95504 6.72747 1.87269 5.92255 2.02453 5.14518C2.17638 4.36781 2.55558 3.65302 3.1141 3.09141C3.67263 2.52979 4.38531 2.14665 5.16183 1.99052C5.93835 1.83438 6.74376 1.9123 7.47595 2.21439C8.20814 2.51649 8.83415 3.02915 9.27466 3.68742C9.71516 4.34568 9.9503 5.1199 9.95031 5.91196C9.95176 6.43581 9.85004 6.95479 9.65091 7.43931C9.45178 7.92383 9.15915 8.36438 8.78976 8.73582C8.42037 9.10725 7.98143 9.4023 7.49801 9.6041C7.0146 9.8059 6.49616 9.91052 5.97232 9.91196Z" fill="currentColor"/>
+                  </svg>
+                </a>
+              </div>
+              <button class="btn btn--menu js-toggle-nav header__btn" data-href="#main-nav"><span class="lines"></span></button>
+            </div>
+        </header>
+        <!-- header end -->
+        <!-- main start-->
+        <main class="main">
+<section class="play">
+  <div class="page-aligner page-aligner--bg-secondary">
+    <div class="container play__container">
+      <!-- breadcrimbs -->
+      <section class="breadcrumbs">
+      	<div class="container">
+      		<div class="breadcrumbs__list">
+      			<span>
+      				<a href="/">Главная</a>
+      			</span>
+      			<span>
+      				Контакты
+      			</span>
+      		</div>
+      	</div>
+      </section>
+      <!-- end breadcrimbs -->
+      <div class="play__img">
+        <img src="img/play.png" alt="">
+      </div>
+      <div class="play__content">
+        <h1 class="ttl ttl--2 play__ttl">Романом у п’яти актах від неба</h1>
+        <br>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan. Lorem Ipsum is simply dummy text of the printing and typesetting industry.  z</p>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <div class="page-aligner">
+    <div class="page-aligner__content play__box">
+      <div class="play__tbl-wrap">
+        <div class="tbl-wrp play__tbl">
+          <table class="tbl no-top-brdr">
+            <tbody>
+              <tr>
+                <td><b>Автор</b></td>
+                <td><a href="">Іван Іванович Іващенко</a></td>
+              </tr>
+              <tr>
+                <td><b>Жанр</b></td>
+                <td>Комедія</td>
+              </tr>
+              <tr>
+                <td><b>Кількість дій</b></td>
+                <td>4 дії</td>
+              </tr>
+              <tr>
+                <td><b>Мова</b></td>
+                <td>Українська</td>
+              </tr>
+              <tr>
+                <td><b>Кількість персонажів</b></td>
+                <td>
+                  Діти: 4<br>
+                  Жінки: 12<br>
+                  Чоловіки: 30<br>
+                  Масовка: 56
+                </td>
+              </tr>
+              <tr>
+                <td><b>Дійові персонажі</b></td>
+                <td>Персонаж, персонаж, персонаж</td>
+              </tr>
+              <tr>
+                <td><b>Аудиторія</b></td>
+                <td>Для дітей/для дітей/підлітків/дорослих/сімейного перегляду</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <a href="" class="show-more">
+          <span>Завантажити п’єсу</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M15 12C14.7348 12 14.4804 12.1054 14.2929 12.2929C14.1054 12.4804 14 12.7348 14 13V14H2V13C2 12.7348 1.89463 12.4804 1.70709 12.2929C1.51956 12.1054 1.26522 12 1 12C0.734784 12 0.480444 12.1054 0.292908 12.2929C0.105371 12.4804 0 12.7348 0 13V15C0 15.2652 0.105371 15.5196 0.292908 15.7071C0.480444 15.8946 0.734784 16 1 16H15C15.2652 16 15.5196 15.8946 15.7071 15.7071C15.8946 15.5196 16 15.2652 16 15V13C16 12.7348 15.8946 12.4804 15.7071 12.2929C15.5196 12.1054 15.2652 12 15 12ZM7.29303 11.707C7.48056 11.8944 7.73484 11.9998 8 11.9998C8.26516 11.9998 8.51944 11.8944 8.70697 11.707L11.707 8.70697C11.8891 8.51837 11.9899 8.2658 11.9877 8.0036C11.9854 7.7414 11.8802 7.49058 11.6948 7.30518C11.5094 7.11977 11.2586 7.01461 10.9964 7.01233C10.7342 7.01005 10.4816 7.11087 10.293 7.29303L9 8.586V1C9 0.734784 8.89463 0.480444 8.70709 0.292908C8.51956 0.105371 8.26522 0 8 0C7.73478 0 7.48044 0.105371 7.29291 0.292908C7.10537 0.480444 7 0.734784 7 1V8.586L5.70697 7.29303C5.51837 7.11087 5.2658 7.01005 5.0036 7.01233C4.7414 7.01461 4.49058 7.11977 4.30518 7.30518C4.11977 7.49058 4.01461 7.7414 4.01233 8.0036C4.01005 8.2658 4.11087 8.51837 4.29303 8.70697L7.29303 11.707Z" fill="black"/>
+          </svg>
+        </a>
+        <br><br>
+
+      </div>
+      <div class="play__anotation">
+        <div class="play__anotation-ttl">Анотація</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- blog end -->
+      </main>
+      <!-- main end-->
+      <!-- main footer -->
+      <footer class="footer">
+        <div class="container">
+          <div class="row footer__top-row">
+            <div class="col footer__top-logo">
+              <img src="img/f-logo-1.png" width="260" alt="">
+            </div>
+            <div class="col footer__top-logo">
+              <img src="img/f-logo-1.png" width="260" alt="">
+            </div>
+          </div>
+          <div class="row footer__row">
+            <div class="col col-12 col-xs-6"><img src="img/f-logo.png" width="138" alt=""></div>
+            <div class="col col-12 col-xs-6">
+              <div class="footer__inf">
+                <span>Телефон:</span>
+                <a href="tel:(044) 279 - 65 - 49">(044) 279 - 65 - 49</a>
+              </div>
+            </div>
+            <div class="col col-12 col-xs-6">
+              <div class="footer__inf">
+                <span>Email:</span>
+                <a href="mainto:info@nstdu.com.ua">info@nstdu.com.ua</a>
+              </div>
+            </div>
+            <div class="col col-12 col-xs-6">
+              <div class="copy">Сайт створено за підтримки</div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- main footer end-->
+    </div>
+  </div>
+  <!-- modal -->
+  <div class="modal mfp-hide" id="modal">
+    <div class="modal__inner">
+      <div class="modal__form-wrap ">
+        <form action="">
+          <div class="modal-form">
+            <div class="modal-form__item">
+              <input type="text" name="name" placeholder="Имя" required>
+              <input type="email" name="email" placeholder="E-mail" required>
+              <input type="tel" name="tel" placeholder="Телефон" required>
+            </div>
+            <div class="modal-form__item">
+              <input type="text" name="skype" placeholder="Skype" required>
+              <select name="" id="xxx" required>
+                <option value="" selected disabled>xxx</option>
+                <option value="">xxx</option>
+                <option value="">xxx</option>  
+                <option value="">xxx</option>
+                <option value="">xxx</option>
+                <option value="">xxx</option>
+                <option value="">xxx</option>
+                <option value="">xxx</option>
+                <option value="">xxx</option>
+                <option value="">xxx</option>
+                <option value="">xxx</option>
+              </select>
+            </div>
+            <div class="modal-form__item">
+              <textarea name="name" rows="8" cols="40" placeholder="Текст" required></textarea>
+              <input type="submit" value="Отправить">
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- modal end -->
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="../js/main.min.js"></script>
+  </body>
+</html>
