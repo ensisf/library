@@ -129,7 +129,11 @@
     width: 100%;
   }
 
+  p {
+    padding-bottom: 10px;
+  }
   .ttl {
+    padding-bottom: 10px;
     @include min('sm') {
       min-height: 104px;
     }
