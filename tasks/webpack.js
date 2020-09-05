@@ -3,7 +3,7 @@ const config = require('./config');
 module.exports = (plugins) => {
     return (cb) => {
         plugins.webpack(
-            require('../webpack.config.js'),
+            require('./webpack.config.js'),
             function (err, stats) {
                 const errors = stats.compilation.errors;
 

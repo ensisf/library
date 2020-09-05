@@ -23,12 +23,12 @@ function buildSprite(gulp, plugins) {
       .pipe(plugins.spritesmith({
         imgName: 'sprite.png', //sprite name
         cssName: '_sprite.scss', //sass file name
-        imgPath: `../img/images/sprite.png`, //the path to sprite image
+        imgPath: `./img/images/sprite.png`, //the path to sprite image
         // cssFormat: 'scss', //format
         padding: 5, // paddings between icons
         // retinaSrcFilter: [`${config.path.src.spriteIcons}/**/*-2x.png`],
         // retinaImgName: 'sprite-2x.png',
-        // retinaImgPath : `../img//images/sprite-2x.png`,
+        // retinaImgPath : `./img//images/sprite-2x.png`,
       })); 
     spriteData.img.pipe(gulp.dest(config.path.build.spriteImg)); // put sprite image
     spriteData.css.pipe(gulp.dest(config.path.build.spriteSass)); // put sprite stylesheet
@@ -57,10 +57,10 @@ function buildSpriteSvg(gulp, plugins) {
       .pipe(plugins.svgSprite({
         mode: {
           symbol: {
-            sprite: "../sprite_symbol.svg",
+            sprite: "./sprite_symbol.svg",
             // render: {
             // 	scss: {
-            // 		dest:'../../../sass/components/_svg_sprite.scss',
+            // 		dest:'./././sass/components/_svg_sprite.scss',
             // 		template: "src/sass/templates/_svg_sprite_template.scss"
             // 	}
             // }

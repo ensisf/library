@@ -1,5 +1,5 @@
-// import '../vendor/mfp';
-// import {setSvgIcon} from '../utils/utils';
+// import './vendor/mfp';
+// import {setSvgIcon} from './utils/utils';
 
 // const popupOpts = {
 //   type: 'inline',

@@ -35,7 +35,7 @@
 
     &::before {
       width: 565px;
-      background-image: url(../img/shape-2.svg);
+      background-image: url(./img/shape-2.svg);
       height: 565px;
       opacity: 1;
     }
@@ -44,7 +44,7 @@
   &__mission {
     background: $primary;
     color: rgba(#000000, 0.8);
-    background-image: url(../img/shape-1.svg);
+    background-image: url(./img/shape-1.svg);
     background-repeat: no-repeat;
     background-position: calc(375px / -2) 50%;
     background-size: 375px 375px;
